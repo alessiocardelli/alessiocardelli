@@ -103,8 +103,8 @@ li::marker {
 
   body {
     font-size: 22px;
-    margin: 24px;
-    margin-right: 24px;
+    margin: 24px !important;
+    margin-right: 24px !important;
   }
 
   .foto {
