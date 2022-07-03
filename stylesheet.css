@@ -1,0 +1,128 @@
+/* STILI GENERALI E DESKTOP */
+
+body {
+  background-color: white;
+  margin: 160px;
+  margin-right: 400px;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 150%;
+  font-size: 40px;
+  color: #161B1C;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: underline;
+  color: #0F89FA;
+}
+
+a:hover {
+  color: #0E6ABF;
+  cursor: pointer;
+}
+
+.foto {
+  width: 160px;
+  height: 160px;
+  position: fixed;
+  top: 160px;
+  right: 160px;
+  background-color: gray;
+  border-radius: 1000px;
+}
+
+.corpo {
+  max-width: 1000px;
+}
+
+.blocco-testo {
+  margin-top: 40px;
+}
+
+.extraspazio {
+  height: 40px;
+}
+
+.footer {
+  font-size: 24px;
+  color: #4E5559;
+}
+
+li::marker {
+  color: #0F89FA;
+}
+
+
+/* TABLET ORIZZONTALE */
+@media (max-width: 1500px) {
+
+  body {
+    margin: 80px;
+    font-size: 24px;
+    margin-right: 200px;
+  }
+
+  .foto {
+    width: 80px;
+    height: 80px;
+    top: 80px;
+    right: 80px;
+  }
+
+  .blocco-testo {
+    margin-top: 32px;
+  }
+
+  .extraspazio {
+    height: 32px;
+  }
+
+  .footer {
+    font-size: 18px;
+  }
+
+}
+
+/* TABLET VERTICALE */
+@media (max-width: 790px) {
+
+  body {
+    margin: 48px;
+    margin-right: 152px;
+  }
+
+  .foto {
+    top: 48px;
+    right: 48px;
+  }
+
+}
+
+/* MOBILE */
+@media (max-width: 540px) {
+
+  body {
+    font-size: 20px;
+    margin-right: 48px;
+  }
+
+  .foto {
+    width: 64px;
+    height: 64px;
+    position: inherit;
+    margin-bottom: 32px;
+  }
+
+  .blocco-testo {
+    margin-top: 24px;
+  }
+
+  .extraspazio {
+    height: 24px;
+  }
+
+  .footer {
+    font-size: 14px;
+  }
+
+}
