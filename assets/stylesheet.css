@@ -11,6 +11,13 @@ body {
   scroll-behavior: smooth;
 }
 
+h1, h2, h3 {
+  font-family: 'DM Sans', sans-serif;
+  line-height: 150%;
+  font-size: 40px;
+  color: #161B1C;
+}
+
 a {
   text-decoration: underline;
   color: #0F89FA;
@@ -71,6 +78,10 @@ li::marker {
     margin-right: 200px;
   }
 
+  h1, h2, h3 {
+    font-size: 24px;
+  }
+
   .foto {
     width: 80px;
     height: 80px;
@@ -115,6 +126,10 @@ li::marker {
     margin: 24px !important;
     margin-top:40px !important;
     margin-right: 24px !important;
+  }
+
+  h1, h2, h3 {
+    font-size: 22px;
   }
 
   .foto {
