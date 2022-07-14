@@ -28,6 +28,7 @@ a {
 a:hover {
   color: #0F89FA;
   text-decoration-color: #0F89FA;
+  transition: 0.25s ease-in-out;
 }
 
 @-webkit-keyframes shine {
