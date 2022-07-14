@@ -21,11 +21,13 @@ h1, h2, h3 {
 
 a {
   text-decoration: underline;
-  color: #0F89FA;
+  text-decoration-color: #cacaca;
+  color: #161B1C;
 }
 
 a:hover {
-  color: #0E6ABF;
+  color: #0F89FA;
+  text-decoration-color: #0F89FA;
 }
 
 @-webkit-keyframes shine {
