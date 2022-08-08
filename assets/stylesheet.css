@@ -3,6 +3,7 @@
 body {
   background-color: white;
   margin: 160px;
+  margin-top:224px;
   margin-right: 400px;
   font-family: 'Plus Jakarta Sans', sans-serif;
   line-height: 150%;
@@ -18,6 +19,7 @@ h1, h2, h3 {
   color: #161B1C;
   font-weight: 400;
 }
+
 
 a {
   color: inherit;
@@ -52,7 +54,7 @@ a:hover {
   width: 160px;
   height: 160px;
   position: fixed;
-  top: 160px;
+  top: 224px;
   right: 160px;
   background-color: gray;
   border-radius: 1000px;
@@ -79,12 +81,31 @@ li::marker {
   color: #0F89FA;
 }
 
+.banner-libro {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  background-color: #0B111F;
+  width: 100%;
+  height: 64px;
+  color: white;
+  font-size: 24px;
+  background-image: url('bg-uxns-libro.png');
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-size: auto 64px;
+  line-height: 64px;
+  display: none;
+}
+
 
 /* TABLET ORIZZONTALE */
 @media (max-width: 1500px) {
 
   body {
     margin: 80px;
+    margin-top:136px;
     font-size: 24px;
     margin-right: 200px;
   }
@@ -96,7 +117,7 @@ li::marker {
   .foto {
     width: 80px;
     height: 80px;
-    top: 80px;
+    top: 136px;
     right: 80px;
   }
 
@@ -112,6 +133,23 @@ li::marker {
     font-size: 18px;
   }
 
+  .banner-libro {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    background-color: #0B111F;
+    width: 100%;
+    height: 56px;
+    color: white;
+    font-size: 20px;
+    background-image: url('bg-uxns-libro.png');
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-size: auto 56px;
+    line-height: 56px;
+  }
+
 }
 
 /* TABLET VERTICALE */
@@ -119,6 +157,7 @@ li::marker {
 
   body {
     margin: 48px;
+    margin-top: 106px;
     margin-right: 152px;
   }
 
@@ -135,7 +174,7 @@ li::marker {
   body {
     font-size: 22px;
     margin: 24px !important;
-    margin-top:40px !important;
+    margin-top:88px !important;
     margin-right: 24px !important;
   }
 
@@ -160,6 +199,23 @@ li::marker {
 
   .footer {
     font-size: 16px;
+  }
+
+  .banner-libro {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    background-color: #0B111F;
+    width: 100%;
+    height: 48px;
+    color: white;
+    font-size: 14px;
+    background-image: url('bg-uxns-libro.png');
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-size: auto 48px;
+    line-height: 48px;
   }
 
 }
