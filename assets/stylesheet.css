@@ -98,6 +98,10 @@ li::marker {
   line-height: 64px;
 }
 
+.accapo {
+  display: none;
+}
+
 
 /* TABLET ORIZZONTALE */
 @media (max-width: 1500px) {
@@ -210,11 +214,16 @@ li::marker {
     height: 48px;
     color: white;
     font-size: 14px;
-    background-image: url('bg-uxns-libro.png');
+    background-image: url('bg-uxns-libro-mobile.png');
     background-repeat: no-repeat;
     background-position-x: 100%;
-    background-size: auto 48px;
-    line-height: 48px;
+    background-size: auto 56px;
+    line-height: 20px;
+    padding-top: 8px;
   }
+
+.accapo {
+  display: block;
+}
 
 }
