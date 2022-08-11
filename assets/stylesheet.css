@@ -66,6 +66,7 @@ a:hover {
 
 .blocco-testo {
   margin-top: 40px;
+  margin-bottom: 0px;
 }
 
 .extraspazio {
@@ -75,6 +76,10 @@ a:hover {
 .footer {
   font-size: 24px;
   color: #4E5559;
+}
+
+ul {
+  margin-bottom: 0px;
 }
 
 li {
