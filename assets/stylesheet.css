@@ -2,31 +2,36 @@
 
 body {
   background-color: white;
-  margin: 160px;
-  margin-top:224px;
-  margin-right: 400px;
   font-family: 'Plus Jakarta Sans', sans-serif;
   line-height: 150%;
-  font-size: 40px;
-  color: #161B1C;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  margin: 160px 0px;
+}
+
+.container {
+  margin: 0px 160px;
+}
+
+@font-face {
+  font-family: satoshi;
+  src: url(Satoshi-Regular.otf);
 }
 
 h1, h2, h3 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: satoshi, sans-serif;
   line-height: 150%;
   font-size: 40px;
   color: #161B1C;
   font-weight: 400;
 }
 
-
-a {
+a.link {
   color: inherit;
   text-decoration: none;
 }
 
-a {
+a.link {
   background:
     linear-gradient(
       to right,
@@ -44,195 +49,494 @@ a {
   transition: background-size 400ms;
 }
 
-a:hover {
+a.link:hover {
   background-size: 0 3px, 100% 3px;
   color: rgba(15, 127, 250, 1);
   transition: 400ms ease-in-out;
 }
 
-.foto {
-  width: 160px;
+.foto-ale {
   height: 160px;
-  position: fixed;
-  top: 224px;
-  right: 160px;
-  background-color: gray;
-  border-radius: 1000px;
+  width: 160px;
+  top: 0;
+  left: 0;
+  margin-bottom: 80px;
 }
 
-.corpo {
-  max-width: 1000px;
+.titolo-head {
+  font-size: 72px;
+  color: #1663F3;
+  line-height: 150%;
+  width: 65%;
+  font-family: satoshi;
+  font-weight: normal;
+  margin-bottom: 40px;
+  margin-top: 0px;
 }
 
-.blocco-testo {
-  margin-top: 40px;
-  margin-bottom: 0px;
+.testo-generico {
+  font-size: 32px;
+  color: #161B1C;
+  line-height: 155%;
+  width: 65%;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: normal;
+  margin-bottom: 80px;
+  margin-top: 0px;
 }
 
-.extraspazio {
-  height: 40px;
-}
-
-.footer {
-  font-size: 24px;
-  color: #4E5559;
-}
-
-ul {
-  margin-bottom: 0px;
-}
-
-li {
-  padding-bottom: 12px;
-}
-
-li::marker {
-  color: #0F89FA;
-}
-
-.banner-libro {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  text-align: center;
-  background-color: #0B111F;
+.fascia-foto {
   width: 100%;
-  height: 64px;
-  color: white;
-  font-size: 24px;
-  background-image: url('bg-uxns-libro.png');
-  background-repeat: no-repeat;
-  background-position-x: 100%;
-  background-size: auto 64px;
-  line-height: 64px;
+  margin: 0px;
+  margin-bottom: 160px;
+  height: auto;
 }
 
-.accapo {
+.fascia-foto-tablet {
   display: none;
 }
 
+.slider-progetti {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-bottom: 80px;
+  gap: 40px;
+  overflow-x: scroll;
+  width: 100%;
+  padding-left: 160px;
+  padding-right: 160px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.slider-progetti::-webkit-scrollbar {
+  display: none;
+}
+
+.card-progetto {
+  width: 500px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.foto-progetto {
+  width: 100%;
+  height: 600px;
+}
+
+.testo-progetto {
+  font-size: 24px;
+  color: #161B1C;
+  line-height: 155%;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: normal;
+}
+
+.lista-loghi {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 160px;
+  gap: 40px;
+  width: 85%;
+}
+
+.logo {
+  height: 160px;
+  width: 160px;
+}
+
+.frecce {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-bottom: 160px;
+  gap: 24px;
+  margin-left: 160px;
+}
+
+.freccia-btn {
+  height: 80px;
+  width: 80px;
+  background-color: white;
+  border-radius: 40px;
+  border: solid 1px #0F89FA;
+}
+
+a.freccia-btn:hover {
+  background-color: #ECF0F6;
+  cursor: pointer;
+}
+
+.freccia-icona {
+  width: 24px;
+  height: 24px;
+  margin: 28px;
+}
+
+
+.card-blog {
+  width: 300px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.foto-blog {
+  width: 100%;
+  height: auto;
+  min-height: 150px;
+  background-color: #EAEDEE;
+}
+
+.testo-blog {
+  font-size: 24px;
+  color: #161B1C;
+  line-height: 155%;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: normal;
+}
+
+.slider-blog {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-bottom: 80px;
+  gap: 40px;
+  width: 100%;
+  padding-left: 160px;
+  padding-right: 160px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+}
+
+.slider-blog::-webkit-scrollbar {
+  display: none;
+}
+
+.lista-iniziative {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 120px;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+}
+
+.iniziativa {
+  margin-top:0px;
+  padding-bottom: 40px;
+  border-bottom: solid 1px #D8DCDE;
+  width: calc( 25% - 30px );
+}
+
+.foto-iniziativa {
+  width: 160px;
+  height: 160px;
+  margin-bottom: -24px;
+}
+
+.testo-iniziativa {
+  font-size: 24px;
+  color: #161B1C;
+  line-height: 155%;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: normal;
+}
+
+.cta-finale {
+  padding: 120px 160px;
+  background-color: white;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  margin-bottom:80px;
+}
+
+.cta-finale::before {
+  background-color: rgba(0,87,255,.03);
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transform: scaleY(0);
+  transform-origin: 0 bottom 0;
+  transition: all .15s ease-out;
+  width: 100%;
+}
+
+.cta-finale:hover::before {
+  transform: scaleY(1);
+}
+
+.cta-finale p {
+  margin-bottom: 40px;
+  text-decoration: none;
+}
+
+.cta-finale .cta-testo {
+    color: #161B1C;
+    transition: all .15s ease-out;
+    text-decoration: none;
+    margin-bottom: 0px;
+}
+
+.cta-finale:hover .cta-testo {
+    color: #1663F3;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+}
+
+.footer-testo {
+  color: #818C8E;
+}
+
+.credits {
+  font-size: 18px;
+  margin-bottom: 0px;
+  color: #818C8E;
+  opacity: 0.8;
+}
+
+.coming-soon {
+  color: gray;
+}
 
 /* TABLET ORIZZONTALE */
-@media (max-width: 1500px) {
+@media (max-width: 1440px) {
 
-  body {
-    margin: 80px;
-    margin-top:136px;
-    font-size: 24px;
-    margin-right: 200px;
-  }
+.titolo-head {
+  font-size: 60px;
+  width: 85%;
+}
 
-  h1, h2, h3 {
-    font-size: 24px;
-  }
+.testo-generico {
+  width: 85%;
+  font-size: 28px;
+}
 
-  .foto {
-    width: 80px;
-    height: 80px;
-    top: 136px;
-    right: 80px;
-  }
+.lista-loghi {
+  width: 100%;
+}
 
-  .blocco-testo {
-    margin-top: 32px;
-  }
+.credits {
+  font-size: 18px;
+}
 
-  .extraspazio {
-    height: 32px;
-  }
+}
 
-  .footer {
-    font-size: 18px;
-  }
+/* TABLET ORIZZONTALE */
+@media (max-width: 1200px) {
 
-  .banner-libro {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    text-align: center;
-    background-color: #0B111F;
-    width: 100%;
-    height: 56px;
-    color: white;
-    font-size: 20px;
-    background-image: url('bg-uxns-libro.png');
-    background-repeat: no-repeat;
-    background-position-x: 100%;
-    background-size: auto 56px;
-    line-height: 56px;
-  }
+.titolo-head {
+  width: 100%;
+}
+
+.testo-generico {
+  width: 100%;
+}
+
+.credits {
+  font-size: 18px;
+}
+
+.fascia-foto {
+  display: none;
+}
+
+.fascia-foto-tablet {
+  display: block;
+  width: 100%;
+  margin: 0px;
+  margin-bottom: 160px;
+  height: auto;
+}
+
+}
+
+/* TABLET ORIZZONTALE */
+@media (max-width: 1024px) {
+
+.container {
+  margin: 0px 80px;
+}
+
+body {
+  margin: 80px 0px;
+}
+
+.titolo-head {
+  font-size: 55px;
+}
+
+.slider-progetti, .slider-blog {
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-bottom: 40px;
+}
+
+.frecce {
+  margin-left: 80px;
+}
+
+.cta-finale {
+  padding: 80px 80px;
+}
+
+.iniziativa {
+  width: calc( 50% - 20px );
+}
 
 }
 
 /* TABLET VERTICALE */
 @media (max-width: 790px) {
 
-  body {
-    margin: 48px;
-    margin-top: 106px;
-    margin-right: 152px;
+.foto-ale {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 40px;
+}
+
+.titolo-head {
+  font-size: 45px;
+}
+
+.testo-generico {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.card-progetto {
+  width: 350px;
+}
+
+.foto-progetto {
+  height: 420px;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+}
+
+.credits {
+  font-size: 18px;
+}
+
+}
+
+/* MOBILE */
+@media (max-width: 560px) {
+
+  .container {
+    margin: 0px 64px;
   }
 
-  .foto {
-    top: 48px;
-    right: 48px;
+  body {
+    margin: 64px 0px;
+  }
+
+  .titolo-head {
+    font-size: 40px;
+  }
+
+  .slider-progetti, .slider-blog {
+    padding-left: 64px;
+    padding-right: 64px;
+    margin-bottom: 32px;
+  }
+
+  .frecce {
+    margin-left: 64px;
+  }
+
+  .cta-finale {
+    padding: 64px 64px;
+  }
+
+  .iniziativa {
+    width: 100%;
+  }
+
+  .fascia-foto-tablet, .frecce {
+    margin-bottom: 80px;
+  }
+
+  .logo {
+    width: 25%;
+    height: 25%;
   }
 
 }
 
 /* MOBILE */
-@media (max-width: 540px) {
+@media (max-width: 420px) {
+
+  .container {
+    margin: 0px 40px;
+  }
 
   body {
-    font-size: 22px;
-    margin: 24px !important;
-    margin-top:88px !important;
-    margin-right: 24px !important;
+    margin: 40px 0px;
   }
 
-  h1, h2, h3 {
-    font-size: 22px;
+  .titolo-head {
+    font-size: 40px;
   }
 
-  .foto {
-    width: 64px;
-    height: 64px;
-    position: inherit;
+  .slider-progetti, .slider-blog {
+    padding-left: 40px;
+    padding-right: 40px;
     margin-bottom: 32px;
   }
 
-  .blocco-testo {
-    margin-top: 24px;
+  .frecce {
+    margin-left: 40px;
   }
 
-  .extraspazio {
-    height: 24px;
+  .cta-finale {
+    padding: 40px 40px;
   }
 
-  .footer {
-    font-size: 16px;
-  }
-
-  .banner-libro {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    text-align: center;
-    background-color: #0B111F;
+  .iniziativa {
     width: 100%;
-    height: 48px;
-    color: white;
-    font-size: 14px;
-    background-image: url('bg-uxns-libro-mobile.png');
-    background-repeat: no-repeat;
-    background-position-x: 100%;
-    background-size: auto 56px;
-    line-height: 20px;
-    padding-top: 8px;
   }
 
-.accapo {
-  display: block;
-}
+  .fascia-foto-tablet, .frecce, .lista-loghi {
+    margin-bottom: 64px;
+  }
+
+  .logo {
+    width: 23%;
+    height: 23%;
+  }
+
+  .titolo-head {
+    font-size: 32px;
+  }
+
+  .testo-generico, .testo-iniziativa, .testo-progetto, .testo-blog {
+    font-size: 20px;
+  }
+
+  .credits {
+    font-size: 14px;
+  }
+
+  .foto-ale {
+    width: 80px;
+    height: 80px;
+  }
+
+  .card-progetto {
+    width: 300px;
+  }
+
+  .foto-progetto {
+    height: 360px;
+  }
 
 }
