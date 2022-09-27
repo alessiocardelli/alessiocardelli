@@ -14,7 +14,7 @@ body {
 }
 
 @font-face {
-  font-family: satoshi;
+  font-family: satoshi, sans-serif;
   src: url(Satoshi-Regular.otf);
 }
 
