@@ -13,13 +13,8 @@ body {
   margin: 0px 160px;
 }
 
-@font-face {
-  font-family: satoshi, sans-serif;
-  src: url(Satoshi-Regular.otf);
-}
-
 h1, h2, h3 {
-  font-family: satoshi, sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   line-height: 150%;
   font-size: 40px;
   color: #161B1C;
@@ -55,7 +50,7 @@ a.link:hover {
   transition: 400ms ease-in-out;
 }
 
-.foto-ale {
+.foto-logo {
   height: 160px;
   width: 160px;
   top: 0;
@@ -68,7 +63,7 @@ a.link:hover {
   color: #1663F3;
   line-height: 150%;
   width: 65%;
-  font-family: satoshi;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: normal;
   margin-bottom: 40px;
   margin-top: 0px;
@@ -394,7 +389,7 @@ body {
 /* TABLET VERTICALE */
 @media (max-width: 790px) {
 
-.foto-ale {
+.foto-logo {
   width: 120px;
   height: 120px;
   margin-bottom: 40px;
@@ -476,11 +471,11 @@ body {
 @media (max-width: 420px) {
 
   .container {
-    margin: 0px 40px;
+    margin: 0px 32px;
   }
 
   body {
-    margin: 40px 0px;
+    margin: 64px 0px;
   }
 
   .titolo-head {
@@ -488,17 +483,17 @@ body {
   }
 
   .slider-progetti, .slider-blog {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
     margin-bottom: 32px;
   }
 
   .frecce {
-    margin-left: 40px;
+    margin-left: 32px;
   }
 
   .cta-finale {
-    padding: 40px 40px;
+    padding: 32px 40px;
   }
 
   .iniziativa {
@@ -510,8 +505,8 @@ body {
   }
 
   .logo {
-    width: 23%;
-    height: 23%;
+    width: 42%;
+    height: 42%;
   }
 
   .titolo-head {
@@ -526,7 +521,7 @@ body {
     font-size: 14px;
   }
 
-  .foto-ale {
+  .foto-logo {
     width: 80px;
     height: 80px;
   }
