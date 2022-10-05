@@ -248,7 +248,7 @@ a.freccia-btn:hover {
 }
 
 .cta-finale::before {
-  background-color: rgba(0,87,255,.03);
+  background-color: #EFF1F4;
   content: "";
   height: 100%;
   left: 0;
@@ -300,6 +300,62 @@ a.freccia-btn:hover {
 
 .cta-fixed {
   display: none;
+}
+
+.menu-home {
+  display: block;
+  font-size: 24px;
+  background-color: transparent;
+  width: 80px;
+  border-radius: 80px;
+  position: fixed;
+  top: 160px;
+  right: 160px;
+  z-index: 999;
+  padding: 28px;
+  transition: 0.3s ease-in-out;
+  color: #161B1C;
+  text-decoration: none;
+}
+
+.menu-testo {
+  display: none;
+  opacity: 0%;
+  transition: display 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  transition-delay: 0.7s;
+}
+
+.menu-icona {
+  right: 0px;
+  top: 0px;
+  padding: 24px;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+}
+
+
+.menu-home:hover {
+  width: 100px;
+  border-radius: 80px;
+  transition: 0.3s ease-in-out;
+}
+
+.menu-home:hover .menu-icona {
+  right: 0px;
+  top: 0px;
+  padding: 24px;
+  position: absolute;
+  rotate: 45deg;
+  transition: 0.3s ease-in-out;
+}
+
+.menu-home:hover .menu-testo {
+  display: block;
+  opacity: 100%;
+  transition: display 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  transition-delay: 0.7s;
 }
 
 /* TABLET ORIZZONTALE */
@@ -387,6 +443,11 @@ body {
   width: calc( 50% - 20px );
 }
 
+.menu-home {
+  top: 80px;
+  right: 80px;
+}
+
 }
 
 /* TABLET VERTICALE */
@@ -466,6 +527,11 @@ body {
   .logo {
     width: 25%;
     height: 25%;
+  }
+
+  .menu-home {
+    top: 64px;
+    right: 64px;
   }
 
 }
@@ -552,6 +618,12 @@ body {
     bottom: 0px;
     z-index: 999;
     text-decoration: none;
+  }
+
+  .menu-home {
+    top: 24px;
+    right: 24px;
+    font-size: 20px;
   }
 
 }
