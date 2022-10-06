@@ -357,10 +357,6 @@ a.freccia-btn:hover {
 }
 
 .menu-home:hover .menu-icona {
-  right: 0px;
-  top: 0px;
-  padding: 24px;
-  position: absolute;
   rotate: 45deg;
   transition: 0.3s ease-in-out;
 }
@@ -498,6 +494,25 @@ body {
 
 .credits {
   font-size: 18px;
+}
+
+.menu-home:hover {
+  width: 80px;
+  border-radius: 80px;
+  transition: 0.3s ease-in-out;
+}
+
+.menu-home:hover .menu-icona {
+  rotate: 0deg;
+  transition: 0.3s ease-in-out;
+}
+
+.menu-home:hover .menu-testo {
+  display: none;
+  opacity: 100%;
+  transition: display 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  transition-delay: 0.7s;
 }
 
 }
