@@ -69,6 +69,10 @@ a.link:hover {
   margin-top: 0px;
 }
 
+.africa {
+  color: #1EA549;
+}
+
 .testo-generico {
   font-size: 32px;
   color: #161B1C;
@@ -248,7 +252,7 @@ a.freccia-btn:hover {
 }
 
 .cta-finale::before {
-  background-color: #EFF1F4;
+  background-color: rgba(71,120,186,0.1);
   content: "";
   height: 100%;
   left: 0;
@@ -281,6 +285,10 @@ a.freccia-btn:hover {
     color: #1663F3;
     text-decoration: underline;
     text-decoration-thickness: 4px;
+}
+
+.cta-finale:hover .africa {
+  color: #1EA549;
 }
 
 .footer-testo {
