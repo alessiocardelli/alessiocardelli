@@ -73,6 +73,10 @@ a.link:hover {
   color: #1EA549;
 }
 
+.midjourney {
+  color: #6E56FF;
+}
+
 .testo-generico {
   font-size: 32px;
   color: #161B1C;
@@ -291,6 +295,10 @@ a.freccia-btn:hover {
   color: #1EA549;
 }
 
+.cta-finale:hover .midjourney {
+  color: #6E56FF;
+}
+
 .footer-testo {
   color: #818C8E;
 }
@@ -342,9 +350,8 @@ a.freccia-btn:hover {
   transition: 0.3s ease-in-out;
 }
 
-
 .menu-home:hover {
-  width: 100px;
+  width: 110px;
   border-radius: 80px;
   transition: 0.3s ease-in-out;
 }
