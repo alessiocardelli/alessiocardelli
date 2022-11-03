@@ -77,6 +77,15 @@ a.link:hover {
   color: #6E56FF;
 }
 
+.loader {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -40px 0 0 -40px;
+}
+
 .testo-generico {
   font-size: 32px;
   color: #161B1C;
