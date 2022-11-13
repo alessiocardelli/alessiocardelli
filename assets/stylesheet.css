@@ -7,6 +7,7 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   margin: 160px 0px;
+  cursor: url("cursor.svg") 40 40, auto;
 }
 
 .container {
@@ -48,6 +49,7 @@ a.link:hover {
   background-size: 0 3px, 100% 3px;
   color: rgba(15, 127, 250, 1);
   transition: 400ms ease-in-out;
+  cursor: url("cursor-hover.svg") 40 40, auto;
 }
 
 .foto-logo {
