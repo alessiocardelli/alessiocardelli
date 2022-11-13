@@ -179,7 +179,7 @@ a.link:hover {
 
 a.freccia-btn:hover {
   background-color: #ECF0F6;
-  cursor: pointer;
+  cursor: url("cursor-hover.svg") 40 40, auto;
 }
 
 .freccia-icona {
@@ -282,6 +282,7 @@ a.freccia-btn:hover {
 
 .cta-finale:hover::before {
   transform: scaleY(1);
+  cursor: url("cursor-hover.svg") 40 40, auto;
 }
 
 .cta-finale p {
@@ -300,14 +301,17 @@ a.freccia-btn:hover {
     color: #1663F3;
     text-decoration: underline;
     text-decoration-thickness: 4px;
+    cursor: url("cursor-hover.svg") 40 40, auto;
 }
 
 .cta-finale:hover .africa {
   color: #1EA549;
+  cursor: url("cursor-hover.svg") 40 40, auto;
 }
 
 .cta-finale:hover .midjourney {
   color: #6E56FF;
+  cursor: url("cursor-hover.svg") 40 40, auto;
 }
 
 .footer-testo {
@@ -370,6 +374,7 @@ a.freccia-btn:hover {
 .menu-home:hover .menu-icona {
   rotate: 45deg;
   transition: 0.3s ease-in-out;
+  cursor: url("cursor-hover.svg") 40 40, auto;
 }
 
 .menu-home:hover .menu-testo {
@@ -378,6 +383,7 @@ a.freccia-btn:hover {
   transition: display 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
   transition-delay: 0.7s;
+  cursor: url("cursor-hover.svg") 40 40, auto;
 }
 
 /* TABLET ORIZZONTALE */
@@ -511,11 +517,13 @@ body {
   width: 80px;
   border-radius: 80px;
   transition: 0.3s ease-in-out;
+  cursor: url("cursor-hover.svg") 40 40, auto;
 }
 
 .menu-home:hover .menu-icona {
   rotate: 0deg;
   transition: 0.3s ease-in-out;
+  cursor: url("cursor-hover.svg") 40 40, auto;
 }
 
 .menu-home:hover .menu-testo {
@@ -524,6 +532,7 @@ body {
   transition: display 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
   transition-delay: 0.7s;
+  cursor: url("cursor-hover.svg") 40 40, auto;
 }
 
 }
