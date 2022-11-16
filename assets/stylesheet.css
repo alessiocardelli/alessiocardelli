@@ -436,6 +436,11 @@ a.freccia-btn:hover {
   height: auto;
 }
 
+.lista-link {
+  width: auto;
+  margin-left: -16px;
+}
+
 }
 
 /* TABLET ORIZZONTALE */
