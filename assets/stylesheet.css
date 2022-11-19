@@ -386,6 +386,11 @@ a.freccia-btn:hover {
   cursor: url("cursor-hover.svg") 40 40, auto;
 }
 
+.plus-spazio-top {
+  margin-top: 160px;
+}
+
+
 /* TABLET ORIZZONTALE */
 @media (max-width: 1440px) {
 
