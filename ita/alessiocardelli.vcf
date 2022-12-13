@@ -1,0 +1,40 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Cardelli;Alessio;;;
+FN:Alessio Cardelli
+ORG:COO & Head of design @ Baasbox;
+BDAY;X-APPLE-OMIT-YEAR=1604;VALUE=date:1604-12-22
+TITLE:Product Designer & Strategist
+item1.ADR;TYPE=pref:;;Via Opacchiasella 64;Fiumicino;RM;00054;Italia
+item1.X-ABLABEL:Casa
+item1.X-ABADR:it
+item2.TEL;TYPE=pref:+39 333 7650394
+item2.X-ABLABEL:phone
+item3.URL;TYPE=pref:http://www.alessiocardelli.com
+item3.X-ABLABEL:Sito web personale
+item4.URL:http://www.baasbox.com/
+item4.X-ABLABEL:Sito web aziendale 
+item5.IMPP;X-SERVICE-TYPE=Telegram;TYPE=pref:https%3A//t.me/acardelli
+item5.X-ABLABEL:Telegram
+item6.IMPP;X-SERVICE-TYPE=WA Business:http%3A//www.alessiocardelli.com/what
+ sapp
+item6.X-ABLABEL:WA Business
+item7.EMAIL;TYPE=pref;TYPE=INTERNET:a.cardelli@baasbox.com
+item7.X-ABLABEL:Lavoro
+item8.EMAIL;TYPE=INTERNET:alessiocardellidesign@gmail.com
+item8.X-ABLABEL:Personale
+X-SOCIALPROFILE;X-USER=alessiocardelli;TYPE=linkedin:https://www.linkedin.c
+ om/in/alessiocardelli
+item9.X-SOCIALPROFILE;X-USER=http://www.alessiocardelli.com/tiktok\;x-teami
+ dentifier=MJ797D8U6F\;x-bundleidentifiers=com.zhiliaoapp.musically:x-apple:
+ http%3A//www.alessiocardelli.com/tiktok
+item9.X-ABLABEL:TikTok
+item10.X-SOCIALPROFILE;X-USER=http://www.alessiocardelli.com/instagram\;x-t
+ eamidentifier=777W53UFB2\;x-bundleidentifiers=com.burbn.instagram:x-apple:h
+ ttp%3A//www.alessiocardelli.com/instagram
+item10.X-ABLABEL:Instagram
+PRODID:-//Apple Inc.//iCloud Web Address Book 2304B11//EN
+REV:2022-12-13T21:18:19Z
+X-IMAGETYPE:PHOTO
+X-IMAGEHASH:rMJbX4TcKx5EU1bVAXFPPw==
+END:VCARD
