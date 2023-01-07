@@ -1,251 +1,126 @@
 <!doctype html>
 
 <html lang="it">
-
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
-    <meta property="og:description" name="description" content="Product Designer & Strategist, UX/UI Mentor, scopri chi è Alessio Cardelli.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:image" content="assets/thumb.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="627">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Alessio Cardelli, Product Designer & Strategist, UX/UI Specialst.">
-    <meta property="og:site_name" content="Alessio Cardelli">
-    <meta property="og:url" content="www.alessiocardelli.com">
-
-    <title>Alessio Cardelli, Product Designer & Strategist, UX/UI Specialst.</title>
-
-    <link rel="stylesheet" type="text/css" href="assets/stylesheet.css"/>
-    <link rel="icon" href="assets/favicon.png" alt="Lettera A, su fondo nero">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;500;700;800&display=swap" rel="stylesheet">
-
-    <script type="text/javascript">
-
-      function scrollright(){
-        const div = document.querySelector(".slider-progetti");
-        div.scrollTo(div.scrollLeft + 540, 0)
-      }
-
-      function scrollleft(){
-        const div = document.querySelector(".slider-progetti");
-        div.scrollTo(div.scrollLeft - 540, 0)
-      }
-
-      function scrollrightblog(){
-        const div = document.querySelector(".slider-blog");
-        div.scrollTo(div.scrollLeft + 680, 0)
-      }
-
-      function scrollleftblog(){
-        const div = document.querySelector(".slider-blog");
-        div.scrollTo(div.scrollLeft - 680, 0)
-      }
-
-    </script>
-
-  </head>
-
-  <body>
-
-    <div class="container">
-      <img class="foto-logo" alt="Alessio Cardelli, foto profilo su sfondo blu" src="assets/home/foto_alessio.png"></img>
-
-      <h1 style="display:none">Alessio Cardelli, UX/UI designer di Roma. Progettazione di interfacce e esperienze di prodotti digitali.</h1>
-      <h2 style="display:none">Mi occupo di UX, UI, product design, product strategy, business strategy, formazione e mentoring.</h2>
-      <h3 style="display:none">Se stai vedendo questi testi, vuol dire che i CSS non si sono caricati. Enjoy.</h3>
-
-      <p class="titolo-head">Piacere, Alessio. Sono un designer, mi occupo di user experience.</p>
-      <p class="testo-generico">Collaboro con i team di aziende e startup per raggiungere obiettivi di business grazie a processi di design. Aiuto aspiranti e junior designer ad accrescere le proprie competenze. Scrivo, insegno, condivido a proposito di UX.</p>
-      <img class="fascia-foto" alt="Alessio Cardelli, varie foto attività di design e UX" src="assets/home/fascia_foto.png"></img>
-      <img class="fascia-foto-tablet" alt="Alessio Cardelli, varie foto attività di design e UX" src="assets/home/fascia_foto_tablet.png"></img>
-
-      <p class="testo-generico">Dal 2012 lavoro con piacere nel mondo dell’innovazione digitale a 360°. Ad oggi sono COO & Head of Product Design di  <a class="link" href="www.baasbox.com" target="_blank" title="Baasbox, società di servizi per prodotti digitali">Baasbox</a>, amo viaggiare e, nel tempo libero, impegnarmi in qualche side-project.</p>
-    </div>
-
-    <div class="slider-progetti">
-        <div class="card-progetto">
-            <img class="foto-progetto" alt="Immagine del nome e/o logo superbrief" src="assets/home/progetto-superbrief.png"></img>
-            <p class="testo-progetto">Una piattaforma destinata a UX designer per richiedere un brief reale da usare per casi studio "concept" per il proprio portfolio.<br><br><span class="coming-soon">Presto online :)</span></p>
-        </div>
-        <div class="card-progetto">
-            <img class="foto-progetto" alt="Copertina del libro The UX North Star" src="assets/home/progetto-libroux.png"></img>
-            <p class="testo-progetto">Contenuti destinati ad aspiranti e junior UX designer. Il progetto si chiama The UX North Star, e non è soltanto un libro.<br><br><a class="link" href="theuxns.html" title="Link del libro The UX North Star">Scopri di più sul progetto</a></p>
-        </div>
-        <div class="card-progetto">
-            <img class="foto-progetto" alt="Foto di zebre nella savana con scritta Kenya in calligrafia" src="assets/home/progetto-kenya.png"></img>
-            <p class="testo-progetto">Il fascino dell’Africa: il Kenya e Watamu. Un viaggio indimenticabile e consigli pratici per organizzarlo al meglio.<br><br><a class="link" href="kenya_viaggio.html" title="Scopri il nostro viaggio in Kenya a Watamu">Viaggia con me in Kenya</a></p>
-        </div>
-        <div class="card-progetto">
-            <img class="foto-progetto" alt="Immagine di un palazzo verde realizzata tramite AI" src="assets/home/progetto-midjourney.png"></img>
-            <p class="testo-progetto">Il 2022 è stato l’anno dell’esplosione dei sistemi text-to-image basati su Open AI. Questo è un caso studio per esplorarli.<br><br><a class="link" href="midjourney_case.html" title="Guarda le immagini realizzate con Midjourney">Approfondisci il progetto</a></p>
-        </div>
-    </div>
-    <div class="frecce frecce-progetti">
-      <a class="freccia-btn" onclick="scrollleft()"><img class="freccia-icona" alt="freccia verso sinistra" src="assets/home/arrow-left.png"></img></a>
-      <a class="freccia-btn" onclick="scrollright()"><img class="freccia-icona" alt="freccia verso sinistra" src="assets/home/arrow-right.png"></img></a>
-    </div>
-
-    <div class="container">
-      <p class="testo-generico">Nel corso degli anni ho avuto il piacere di operare in decine di mercati, tra i quali fitness, telecomunicazioni, sport, fintech, medicina, trasporti, formazione, editoria.</p>
-      <div class="lista-loghi">
-        <img class="logo" alt="Logo Lega Nazionale B" src="assets/home/logo_lnpb.png"></img>
-        <img class="logo" alt="Logo Xribabooks" src="assets/home/logo_xribabooks.png"></img>
-        <img class="logo" alt="Logo Fitprime" src="assets/home/logo_fitprime.png"></img>
-        <img class="logo" alt="Logo Bnl" src="assets/home/logo_bnl.png"></img>
-        <img class="logo" alt="Logo Infocert" src="assets/home/logo_infocert.png"></img>
-        <img class="logo" alt="Logo Mexedia Spa" src="assets/home/logo_mexedia.png"></img>
-        <img class="logo" alt="Logo Società Editoriale Il Fatto" src="assets/home/logo_seif.png"></img>
-        <img class="logo" alt="Logo Osa Community" src="assets/home/logo_osa.png"></img>
-        <img class="logo" alt="Logo Bloomfleet" src="assets/home/logo_bloomfleet.png"></img>
-        <img class="logo" alt="Logo Direttoo" src="assets/home/logo_direttoo.png"></img>
-        <img class="logo" alt="Logo Yome Digital" src="assets/home/logo_yome.png"></img>
+<!-- - - - - - - - - - - - - - - - - - - - - - HEAD - - - - - - - - - - - - - - - - - - - - -->
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta property="og:description" name="description" content="Product Designer & Strategist, UX/UI Mentor, scopri chi è Alessio Cardelli.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- - - - - - - - - - - - - - - - - - - - - - THUMB - - - - - - - - - - - - - - - - - - - - -->
+  <meta property="og:image" content="assets/thumbs/generic.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="627">
+  <!-- - - - - - - - - - - - - - - - - - - - - - THUMB - - - - - - - - - - - - - - - - - - - - -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alessio Cardelli, Product Designer & Strategist, UX/UI Specialst, Speaker, Mentor, Autore.">
+  <meta property="og:site_name" content="Alessio Cardelli">
+  <meta property="og:url" content="www.alessiocardelli.com">
+<!-- - - - - - - - - - - - - - - - - - - - - - TITLE - - - - - - - - - - - - - - - - - - - - -->
+  <title>Alessio Cardelli, Designer & Strategist, UX/UI Specialst, Speaker, Mentor, Autore.</title>
+<!-- - - - - - - - - - - - - - - - - - - - - - TITLE - - - - - - - - - - - - - - - - - - - - -->
+  <link rel="stylesheet" type="text/css" href="assets/stylesheet.css"/>
+  <link rel="icon" href="assets/general/favicon.png" alt="Foto di Alessio Cardelli">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<!-- - - - - - - - - - - - - - - - - - - - - - HEAD - - - - - - - - - - - - - - - - - - - - -->
+<!--
+xxx
+xxx
+ -->
+<body>
+<div class="container">
+<!-- - - - - - - - - - - - - - - - - - - - - - MENU - - - - - - - - - - - - - - - - - - - - -->
+<div class="menu">
+<div class="logo"><a href="index.html" title="Homepage del sito web di Alessio Cardelli">alessio cardelli</a></div>
+  <div class="menu-group">
+    <div class="menu-links"><a class="link" href="about.html" title="Pagina about del sito web di Alessio Cardelli">me</a></div>
+    <div class="menu-links"><a class="link" href="services.html" title="Pagina about del sito web di Alessio Cardelli">services</a></div>
+    <div class="menu-links"><a class="link" href="contents.html" title="Pagina contenuti del sito web di Alessio Cardelli">contents</a></div>
+    <div class="menu-links"><a class="link" href="projects.html" title="Pagina progetti del sito web di Alessio Cardelli">projects</a></div>
+  </div>
+  <div class="menu-mobile">menu</div>
+</div>
+<!-- - - - - - - - - - - - - - - - - - - - - - MENU - - - - - - - - - - - - - - - - - - - - -->
+<!--
+xxx
+xxx
+ -->
+<!-- - - - - - - - - - - - - - - - - - - - - - CONTENUTO - - - - - - - - - - - - - - - - - - - - -->
+<h1 class="big-title">Ciao, Alessio. Sono un product designer.</h1>
+<div class="quote-group quote-group-home margin-bottom-80">
+  <img class="foto-quote" src="assets/general/alessio.png" alt="Immagine di Alessio Cardelli in primo piano su sfondo blu"></img>
+  <h2 class="quote-bold">Collaboro con aziende e designer per raggiungere obiettivi di business in modo più efficiente ed efficace grazie a processi di design.</h2>
+  <h3 class="quote-regular">Dal 2012 lavoro nel mondo del design del prodotto digitale, collaborando con grandi e piccole aziende, aiutando designer a ottenere di più dalle proprie competenze e dalla propria carriera.
+  <br><br><a class="link" href="about.html" title="Pagina about di Alessio Cardelli">Conosciamoci meglio →</a>
+</h3>
+</div>
+<!-- <img class="foto-home" src="assets/home/foto-home.png" alt="Immagine di Alessio Cardelli"></img> -->
+<!-- - - - - - - - - - - - - - - - - - - - - - SEPARATORE - - - - - - - - - - - - - - - - - - - - -->
+<div class="content-list">
+  <div class="content-title">Ultimi contenuti</div>
+  <div class="content-box"><p class="content-text"><a class="link" target="_blank" href="https://open.spotify.com/episode/2cJMqUxvDaRomzraFcyLFF?si=c76b7219961e400a" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">3D e realtà virtuale, per una Customer Experience omnicanale ↗</a></p><p class="content-sub">🎙️ Podcast - 2022 , 20 Dic - 11 min</p></div>
+  <div class="content-box"><p class="content-text"><a class="link" target="_blank" href="https://baasbox.com/magazine/virtual-reality-alla-prova-della-ux/" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">Parliamo di user experience per la virtual reality ↗</a></p><p class="content-sub">📰  Articolo - 2022 , 30 Mag - 5 min</p></div>
+  <div class="content-box"><p class="content-text"><a class="link" target="_blank" href="https://open.spotify.com/episode/4GiKIpiewM0q8FVnYwhlbT?si=d5967203ca54401b&nd=1" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">Intervista a Chiara Schettino per Catobi: parliamo di ricerca ↗</a></p><p class="content-sub">🎙️ Podcast - 2022 , 5 Mag - 20 min</p></div>
+  <div class="content-box"><p class="content-text"><a class="link" target="_blank" href="https://open.spotify.com/episode/0k8T72Ifwi8diOvQiswOXj?si=4ad511fc08704506&nd=1" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">Vivere nel metaverso: VR, blockchain, NFT e nuove tecnologie ↗</a></p><p class="content-sub">🎙️ Podcast - 2022 , 29 Apr - 30 min</p></div>
+  <div class="inline-cta"><a class="link" href="contents.html" title="Pagina di tutti i contenuti di Alessio Cardelli">Vedi tutti i contenuti  →</a></div>
+</div>
+<!-- - - - - - - - - - - - - - - - - - - - - - SEPARATORE - - - - - - - - - - - - - - - - - - - - -->
+<div class="trust-group">
+  <div class="trust-box">
+    <p class="trust-text">Lavorare con Alessio? Un’esperienza formativa e d’ispirazione. Ascolto, precisione, rispetto delle tempistiche [...]. Un professionista serio e motivato, con grandi doti di leadership.</p>
+      <div class="people-box">
+        <img class="foto-people" src="assets/home/elisabetta.png" alt="Immagine di una testimonianza per Alessio Cardelli, designer"></img>
+        <div class="people-info"><p class="people-name">Elisabetta Piccinini</p><p class="people-role"><a href="https://www.linkedin.com/in/elisabetta-piccinni-15a7a067/" title="Link esterno al sito web di Alessio Cardelli" target="_blank" class="link">Project manager @ Consulcesi ↗</a></p></div>
       </div>
-
-      <p class="testo-generico">Amo acquisire e condividere conoscenza. Elaboro e pubblico articoli, video, webinar, podcast, report su temi che riguardano la UX, la UI, il design, il business digitale, il service design e l’innovazione.</p>
-    </div>
-
-    <div class="slider-blog">
-        <div class="card-blog">
-            <img class="foto-blog" alt="Scena gameplay di Oculus Quest 2" src="assets/blog/ux_vr_articolo.png"></img>
-            <p class="testo-blog">Parliamo di user experience per la virtual reality.<br><br><a class="link" href="https://baasbox.com/magazine/virtual-reality-alla-prova-della-ux/" target="_blank" title="Link all'articolo di Baasbox">Leggi l'articolo</a></p>
-        </div>
-        <div class="card-blog">
-            <img class="foto-blog" alt="Schermata metaverso di esempio" src="assets/blog/metaverso_podcast.png"></img>
-            <p class="testo-blog">Vivere nel metaverso: VR, blockchain, NFT e nuove tecnologie.<br><br><a class="link" href="https://open.spotify.com/episode/0k8T72Ifwi8diOvQiswOXj?si=4ad511fc08704506" target="_blank" title="Puntata del podcast Space in a Boz">Ascolta la puntata</a></p>
-        </div>
-        <div class="card-blog">
-            <img class="foto-blog" alt="Scena di dialogo tra alcune persone" src="assets/blog/articolo_divergere.png"></img>
-            <p class="testo-blog">La condivisione in un progetto digitale: divergere per convergere.<br><br><a class="link" href="https://baasbox.com/magazine/condivisione-nel-progetto-digitale-divergere-convergere/" target="_blank" title="Articolo per Baasbox">Leggi l'articolo</a></p>
-        </div>
-        <div class="card-blog">
-            <img class="foto-blog" alt="Uomo di Vitruvio di Leonardo Da Vinci" src="assets/blog/vitruvio-articolo.png"></img>
-            <p class="testo-blog">UX designer di Vitruvio: skill matrix e skill assestment.<br><br><a class="link" href="https://www.linkedin.com/pulse/l%25C9%2599-ux-designer-di-vitruvio-alessio-cardelli" target="_blank" title="Link all'articolo scritto su Linkedin">Leggi l'articolo</a></p>
-        </div>
-        <div class="card-blog">
-            <img class="foto-blog" alt="Immagine generica sull'innovazione" src="assets/blog/catobi-schettino.png"></img>
-            <p class="testo-blog">Intervista a Chiara Schettino per Catobi: parliamo di ricerca.<br><br><a class="link" href="https://open.spotify.com/episode/4GiKIpiewM0q8FVnYwhlbT?si=d5967203ca54401b" target="_blank" title="Puntata podcast per Catobi">Ascolta l'intervista</a></p>
-        </div>
-        <div class="card-blog">
-            <img class="foto-blog" alt="Ragazza che salta felice del suo acquisto" src="assets/blog/cx-podcast.png"></img>
-            <p class="testo-blog">Customer Experience e User Experience, dialogo con Simone Mariano.<br><br><a class="link" href="https://open.spotify.com/episode/3LHP15PLJ16MWOEjTfxNye?si=453acd71702440e7" target="_blank" title="Puntata podcast Catobi, intervista Simone Mariano">Ascolta la puntata</a></p>
-        </div>
-        <div class="card-blog">
-            <img class="foto-blog" alt="Statistiche generali" src="assets/blog/ux-numeri.png"></img>
-            <p class="testo-blog">Perché investire in attività di UX spiegato con i numeri.<br><br><a class="link" href="https://baasbox.com/magazine/perche-investire-in-ux/" target="_blank" title="Articolo per Baasbox">Leggi l'articolo</a></p>
-        </div>
-        <div class="card-blog">
-            <img class="foto-blog" alt="Immagine generica sull'innovazione" src="assets/blog/catobi-bisogno.png"></img>
-            <p class="testo-blog">Intervista a Paola Bisogno per Catobi: parliamo di ricerca.<br><br><a class="link" href="https://open.spotify.com/episode/1AzsNYkHsXRpyPeM0Du6Xf?si=a678259a29dc460a" target="_blank" title="Puntata podcast per Catobi">Ascolta l'intervista</a></p>
-        </div>
-        <div class="card-blog">
-            <img class="foto-blog" alt="Numeri applicati ad attività digital" src="assets/blog/roi-ux.png"></img>
-            <p class="testo-blog">Calcolare il ROI sulle attività di User Experience.<br><br><a class="link" href="https://baasbox.com/magazine/calcolare-il-roi-degli-investimenti-in-ux/" target="_blank" title="Articolo per Baasbox">Leggi l'articolo</a></p>
-        </div>
-        <div class="card-blog">
-            <img class="foto-blog" alt="Immagine generica sull'innovazione" src="assets/blog/catobi-romero.png"></img>
-            <p class="testo-blog">Intervista a Paul Romero per Catobi: parliamo di ricerca.<br><br><a class="link" href="https://open.spotify.com/episode/4nvlY9SPA7WkGIw3bvyRJI?si=ab657247e36c4a13" target="_blank" title="Puntata podcast per Catobi">Ascolta l'intervista<</a></p>
-        </div>
-        <div class="card-blog">
-            <img class="foto-blog" alt="Copertina della puntata del podcast con volto di Alessio Cardelli" src="assets/blog/universita-design.png"></img>
-            <p class="testo-blog">Futuro e formazione per chi vuole fare UX design.<br><br><a class="link" href="https://anchor.fm/universitadesign/episodes/Alessio-Cardelli---Head-of-Product-Design-e1frn83" target="_blank" title="Intervista per università.design">Ascolta l'intervista</a></p>
-        </div>
-        <div class="card-blog">
-            <img class="foto-blog" alt="Cocktail spritz" src="assets/blog/innovation-spritz.png"></img>
-            <p class="testo-blog">UX, ricerca e Customer Experience: innovation sprinz con Catobi.<br><br><a class="link" href="https://open.spotify.com/episode/0WlZshGpNgC9O9dxs6t7U2?si=88fecdd66960455c" target="_blank" title="Intervista con Catobi di Alessio Cardelli">Ascolta il podcast</a></p>
-        </div>
-        <div class="card-blog">
-            <img class="foto-blog" alt="Costruzioni lego, immagine generica" src="assets/blog/lego-building.png"></img>
-            <p class="testo-blog">Lego e progettazione digitale, una puntata per Space in a Box.<br><br><a class="link" href="https://open.spotify.com/episode/5wSwYXKE0Nf3X6cIAZaths?si=10903964a34b4fb8" target="_blank" title="Puntata del podcast per Space in a Box">Ascolta il podcast</a></p>
-        </div>
-        <div class="card-blog">
-            <img class="foto-blog" alt="Immagine di sassi di fiume" src="assets/blog/mvp-product.png"></img>
-            <p class="testo-blog">Minimum Viable Product o Fast Go To Market? Parliamone.<br><br><a class="link" href="https://baasbox.com/magazine/mvp-o-fast-go-to-market-facciamo-chiarezza/" target="_blank" title="Articolo per Baasbox">Leggi l'articolo</a></p>
-        </div>
-        <div class="card-blog">
-            <img class="foto-blog" alt="Immagine di uno schermo di Matrix" src="assets/blog/big-bug.png"></img>
-            <p class="testo-blog">Anche i Big hanno i Bug.<br><br><a class="link" href="https://baasbox.com/magazine/big-hanno-bug/" target="_blank" title="Articolo per Baasbox">Leggi l'articolo</a></p>
-        </div>
-        <div class="card-blog">
-            <img class="foto-blog" alt="Immagine webinar generica" src="assets/blog/webinar-01.png"></img>
-            <p class="testo-blog">Ricerca, validazione e processi di UX: webinar live con Thesignof.<br><br><a class="link" href="https://www.facebook.com/pauljesusbenitesromero/videos/1148817469195333/" target="_blank" title="Webinar live con Thesignof">Guarda la registrazione</a></p>
-        </div>
-        <div class="card-blog">
-            <img class="foto-blog" alt="Immagine webinar generica" src="assets/blog/webinar-02.png"></img>
-            <p class="testo-blog">Il rapporto tra designer e developer: webinar live con Thesignof<br><br><a class="link" href="https://www.facebook.com/100003325770724/videos/2870956809782981/" target="_blank" title="Webinar live con Thesignof">Guarda la registrazione</a></p>
-        </div>
-        <div class="card-blog">
-            <img class="foto-blog" alt="Immagine webinar generica" src="assets/blog/webinar-03.png"></img>
-            <p class="testo-blog">Progettare un design system con gli occhi di un developer.<br><br><a class="link" href="https://www.youtube.com/watch?v=kfrVzHYTIG4&t=2s&ab_channel=TheCommunitiesBay" target="_blank" title="Webinar live con DevWorkSpace">Guarda la registrazione</a></p>
-        </div>
-        <div class="card-blog">
-            <img class="foto-blog" alt="Immagine webinar generica" src="assets/blog/website.png"></img>
-            <p class="testo-blog">Progettare un sito web accessibile: report da scaricare.<br><br><a class="link" href="https://baasbox.com/magazine/performance-sito-web-business/" target="_blank" title="Articolo per Baasbox">Scarica il report</a></p>
-        </div>
-        <div class="card-blog">
-            <img class="foto-blog" alt="Immagine webinar generica" src="assets/blog/lockdown.png"></img>
-            <p class="testo-blog">Le nuovi abitudini di acquisto post lockdown: report da scaricare.<br><br><a class="link" href="https://baasbox.com/magazine/vendere-online-dopo-lockdown-e-commerce/" target="_blank" title="Articolo per Baasbox">Scarica il report</a></p>
-        </div>
-        <div class="card-blog">
-            <img class="foto-blog" alt="Immagine webinar generica" src="assets/blog/webinar-04.png"></img>
-            <p class="testo-blog">Personal branding e UX design: intervista per Design Informale.<br><br><a class="link" href="https://www.youtube.com/watch?v=o_rutV81l74&t=1s&ab_channel=RaffaeleVitale" target="_blank" title="Intervista live per Design Informale">Guarda la registrazione</a></p>
-        </div>
-        <div class="card-blog">
-            <img class="foto-blog" alt="Immagine webinar generica" src="assets/blog/webinar-05.png"></img>
-            <p class="testo-blog">Come nasce un prodotto digitale, intervista per E-makers.<br><br><a class="link" href="https://www.youtube.com/watch?v=7gIynRyZqHE&t=1s&ab_channel=e-makers" target="_blank" title="Intervista per E-makers">Guarda la registrazione</a></p>
-        </div>
-    </div>
-    <div class="frecce frecce-blog">
-      <a class="freccia-btn" onclick="scrollleftblog()"><img class="freccia-icona" alt="freccia verso sinistra" src="assets/home/arrow-left.png"></img></a>
-      <a class="freccia-btn" onclick="scrollrightblog()"><img class="freccia-icona" alt="freccia verso sinistra" src="assets/home/arrow-right.png"></img></a>
-    </div>
-
-    <div class="container">
-      <p class="testo-generico">Non mi occupo solo di UX ma cerco di contribuire in progetti e iniziative che sposano i miei valori. Sono impegnato su temi come formazione, divulgazione, ambiente, donazioni, volontariato.</p>
-      <div class="lista-iniziative">
-        <div class="iniziativa">
-            <img class="foto-iniziativa" alt="Logo CSSDA" src="assets/home/logo_cssda.png"></img>
-            <p class="testo-iniziativa">Sono PRO Judge per CSS Design Awards con +850 website giudicati.</a></p>
-        </div>
-        <div class="iniziativa">
-            <img class="foto-iniziativa" alt="Logo PlasticFree" src="assets/home/logo_plasticfree.png"></img>
-            <p class="testo-iniziativa">Sono volontario referente per la città di Fiumicino per PlasticFree.</a></p>
-        </div>
-        <div class="iniziativa">
-            <img class="foto-iniziativa" alt="Logo Superpeer" src="assets/home/logo_superpeer.png"></img>
-            <p class="testo-iniziativa">Sono UX/UI mentor su piattaforme come Designed e Superpeer.</a></p>
-        </div>
-        <div class="iniziativa">
-            <img class="foto-iniziativa" alt="Logo Peekaboo" src="assets/home/logo_peekaboo.png"></img>
-            <p class="testo-iniziativa">Sono startup mentor (area UX & Product) per la community di Peekaboo.</a></p>
-        </div>
-        <div class="iniziativa">
-            <img class="foto-iniziativa" alt="Logo Rosso" src="assets/home/logo_rosso.png"></img>
-            <p class="testo-iniziativa">Collaboro con Rosso, un progetto in ambito donazioni di sangue per under30.</a></p>
-        </div>
-        <!--<div class="iniziativa">
-            <img class="foto-iniziativa" alt="Logo TEDx" src="assets/home/logo_tedx.png"></img>
-            <p class="testo-iniziativa">Sono un licenziatario TEDx e co-organizzatore del TEDxFiumicino.</a></p>
-        </div>-->
+  </div>
+  <div class="trust-box">
+    <p class="trust-text">Alessio ha sia le capacità tecniche che quelle manageriali per portare avanti il lavoro nel migliore dei modi prendendosi le responsabilità e garantendo le scadenze stabilite [...]. Nel mio "dream team" c'è lui!
+</p>
+      <div class="people-box">
+        <img class="foto-people" src="assets/home/federico.png" alt="Immagine di una testimonianza per Alessio Cardelli, designer"></img>
+        <div class="people-info"><p class="people-name">Federico Pacilli</p><p class="people-role"><a href="https://www.linkedin.com/in/federico-pacilli-09517490/" title="Link esterno al sito web di Alessio Cardelli" target="_blank" class="link">CEO @ CryptoBooks ↗</a></p></div>
       </div>
-    </div>
-
-    <a class="cta-finale" href="https://www.linkedin.com/in/alessiocardelli/" title="Alessio Cardelli, profilo Linkedin" target="_blank">
-      <p class="testo-generico">Parliamo del tuo progetto e dei tuoi obiettivi.</p>
-      <p class="titolo-head cta-testo">Oh yeah 🤟 Parliamo adesso!</p>
-    </a>
-
-    <div class="container">
-      <p class="testo-generico footer-testo">Mi trovi anche su <a class="link" href="https://www.instagram.com/alex.cardelli/" title="Profilo Instagram di Alessio Cardelli" target="_blank">Instagram</a>, <a class="link" href="https://www.tiktok.com/@alessiocardelli?_t=8VyuBX1OpPy&_r=1" title="Profilo Tiktok di Alessio Cardelli" target="_blank">TikTok</a> o <a class="link" href="https://t.me/acardelli" title="Canale Telegram di Alessio Cardelli" target="_blank">Telegram</a></p>
-      <p class="testo-generico credits">Copyright of Alessio Cardelli, ovviamente :)</p>
-    </div>
-
-  </body>
-
+  </div>
+  <div class="trust-box">
+    <p class="trust-text">Ho collaborato con Alessio in più occasioni [...] non guarda solo al design ma anche al business e sopratutto al valore tangibile che può portare nelle aziende attraverso la sua professionalità.</p>
+      <div class="people-box">
+        <img class="foto-people" src="assets/home/paul.png" alt="Immagine di una testimonianza per Alessio Cardelli, designer"></img>
+        <div class="people-info"><p class="people-name">Paul Romero</p><p class="people-role"><a href="https://www.linkedin.com/in/pauljesusbenitesromero/" title="Link esterno al sito web di Alessio Cardelli" target="_blank" class="link">UX & Service Designer Freelance ↗</a></p></div>
+      </div>
+  </div>
+</div>
+<!-- - - - - - - - - - - - - - - - - - - - - - CONTENUTO - - - - - - - - - - - - - - - - - - - - -->
+<!--
+xxx
+xxx
+ -->
+<!-- - - - - - - - - - - - - - - - - - - - - - FOOTER - - - - - - - - - - - - - - - - - - - - -->
+<div class="footer">
+<hr class="footer-line"></hr>
+<div class="footer-contents">
+  <div class="footer-block">
+    <div class="logo"><a href="index.html" title="Homepage del sito web di Alessio Cardelli">alessio cardelli</a></div>
+    <div class="footer-link"><a class="link" href="ndts.html" title="Form per iscriversi alla newsletter personale di Alessio Cardelli">iscriviti alla mia newsletter</a></div>
+    <div class="footer-link"><a class="link" href="mailto:alessiocardellidesign@gmail.com" target="_blank" title="Indirizzo email di Alessio Cardelli">scrivimi una email ✉️</a></div>
+  </div>
+  <div class="footer-block">
+    <div class="footer-link"><a class="link" href="privacy.html" target="_blank" title="Pagina informativa privacy di Alessio Cardelli">privacy</a></div>
+    <div class="footer-link"><a class="link" href="links.html" target="_blank" title="Link rapidi di Alessio Cardelli">link rapidi</a></div>
+    <div class="footer-link"><a class="link" href="sitemap.xml" target="_blank" title="Sitemap del website di Alessio Cardelli">sitemap</a></div>
+  </div>
+  <div class="footer-block">
+    <div class="footer-link"><a class="link" href="linkedin.html" target="_blank" title="Profilo LinkedIn di Alessio Cardelli">linkedIn ↗</a></div>
+    <div class="footer-link"><a class="link" href="instagram.html" target="_blank" title="Profilo Instagram di Alessio Cardelli">instagram ↗</a></div>
+    <div class="footer-link"><a class="link" href="tiktok.html" target="_blank" title="Profilo TikTok di Alessio Cardelli">tiktok ↗</a></div>
+  </div>
+</div>
+<div class="footer-copyright">copyright of alessio cardelli | IT12871031006</div>
+</div>
+<!-- - - - - - - - - - - - - - - - - - - - - - FOOTER - - - - - - - - - - - - - - - - - - - - -->
+</div>
+</body>
 </html>
