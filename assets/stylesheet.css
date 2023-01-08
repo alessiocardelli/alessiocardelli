@@ -90,6 +90,12 @@ a.link:hover {
   cursor: pointer;
 }
 
+.active-menu {
+  background-size: 0 1px, 100% 1px !important;
+  color: rgba(15, 127, 250, 1) !important;
+  cursor: pointer !important;
+}
+
 .footer {
   padding-top: 160px;
 }
@@ -198,7 +204,7 @@ h3 {
   padding-bottom: 160px;
 }
 
-.content-title, .inline-cta, .trust-text {
+.content-title, .inline-cta {
   font-size: 24px;
   font-weight: 400;
   line-height: 150%;
@@ -238,6 +244,7 @@ h3 {
 .trust-text {
   margin-top: 0px;
   margin-bottom: 32px;
+  font-size: 20px;
 }
 
 .people-box {
@@ -455,8 +462,7 @@ h3 {
     position: fixed;
     bottom: 0px;
     height: 72px;
-    background-color: rgba(255,255,255, 0.7);
-    backdrop-filter: blur(5px);
+    background-color: white;
     width: 100%;
   }
 
