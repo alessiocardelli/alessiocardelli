@@ -379,6 +379,10 @@ h3 {
   line-height: 150%;
 }
 
+.foto-content-mobile {
+  display: none;
+}
+
 
 /* TABLET ORIZZONTALE */
 @media (max-width: 1440px) {
@@ -626,6 +630,14 @@ h3 {
 
   .inline-cta {
     font-size: 20px;
+  }
+
+  .foto-content-desktop {
+    display: none;
+  }
+
+  .foto-content-mobile {
+    display: block;
   }
 
 }
