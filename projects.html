@@ -20,6 +20,27 @@
 <!-- - - - - - - - - - - - - - - - - - - - - - TITLE - - - - - - - - - - - - - - - - - - - - -->
   <title>Projects | Alessio Cardelli</title>
 <!-- - - - - - - - - - - - - - - - - - - - - - TITLE - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - JAVASCRIPT - - - - - - - - - - - - - - - - - - - - -->
+<script type="text/javascript">
+function reveal() {
+var reveals = document.querySelectorAll(".reveal");
+
+for (var i = 0; i < reveals.length; i++) {
+  var windowHeight = window.innerHeight;
+  var elementTop = reveals[i].getBoundingClientRect().top;
+  var elementVisible = 150;
+
+  if (elementTop < windowHeight - elementVisible) {
+    reveals[i].classList.add("active");
+  } else {
+    reveals[i].classList.remove("active");
+  }
+}
+}
+
+window.addEventListener("scroll", reveal);
+</script>
+<!-- - - - - - - - - - - - - - - - - - - - - - JAVASCRIPT - - - - - - - - - - - - - - - - - - - - -->
   <link rel="stylesheet" type="text/css" href="assets/stylesheet.css"/>
   <link rel="icon" href="assets/general/favicon.png" alt="Foto di Alessio Cardelli">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,7 +79,7 @@ xxx
 </div>
 <!-- - - - - - - - - - - - - - - - - - - - - - SEPARATORE - - - - - - - - - - - - - - - - - - - - -->
 <div class="projects-group">
-  <div class="project-box">
+  <div class="project-box reveal">
     <img class="project-img" src="assets/projects/theuxns.png" alt="Immagine di un progetto di Alessio Cardelli"></img>
     <div class="project-texts">
       <h2 class="project-title">The UX North star project: contenuti di altissimo valore per aspiranti UX designer.</h2>
@@ -66,7 +87,7 @@ xxx
       <br><br><a class="link" title="Link ad un progetto di Alessio Cardelli" href="theuxns.html">Scopri di più sul progetto  →</a></p>
     </div>
   </div>
-<div class="project-box">
+<div class="project-box reveal">
   <img class="project-img" src="assets/projects/figma.png" alt="Immagine di un progetto di Alessio Cardelli"></img>
   <div class="project-texts">
     <h2 class="project-title">Figma assets for everyone: accedi alla mia personale libreria di materiali e template.</h2>
@@ -74,7 +95,7 @@ xxx
     <br><br><a class="link" target="_blank" title="Link ad un progetto di Alessio Cardelli" href="figma.html">Vai alla pagina di Figma Community  ↗</a></p>
   </div>
 </div>
-<div class="project-box">
+<div class="project-box reveal">
   <img class="project-img" src="assets/projects/openai.png" alt="Immagine di un progetto di Alessio Cardelli"></img>
   <div class="project-texts">
     <h2 class="project-title">The Infinite Lands: un progetto sperimentale con Open AI e Midjourney.</h2>
@@ -82,7 +103,7 @@ xxx
     <br><br><a class="link" title="Link ad un progetto di Alessio Cardelli" href="openai.html">Scopri di più sul progetto  →</a></p>
   </div>
 </div>
-<div class="project-box">
+<div class="project-box reveal">
   <img class="project-img" src="assets/projects/tedxfiumicino.png" alt="Immagine di un progetto di Alessio Cardelli"></img>
   <div class="project-texts">
     <h2 class="project-title">TEDxFiumicino: divulgare la cultura e la scienza ai cittadini della mia terra.</h2>
@@ -90,7 +111,7 @@ xxx
     <br><br><a class="link" target="_blank" title="Link ad un progetto di Alessio Cardelli" href="http://tedxfiumicino.com/">Approfondisci sul sito dell’evento  ↗</a></p>
   </div>
 </div>
-<div class="project-box no-margin-bottom">
+<div class="project-box no-margin-bottom reveal">
   <img class="project-img" src="assets/projects/uxarena.png" alt="Immagine di un progetto di Alessio Cardelli"></img>
   <div class="project-texts">
     <h2 class="project-title">UX Arena: il luogo in cui richiedere un brief di progetto vero, per formazione vera.</h2>
@@ -100,7 +121,7 @@ xxx
 </div>
 </div>
 <!-- - - - - - - - - - - - - - - - - - - - - - SEPARATORE - - - - - - - - - - - - - - - - - - - - -->
-<div class="content-list no-padding-bottom">
+<div class="content-list no-padding-bottom reveal">
   <div class="content-title">Gli ultimi casi studio</div>
   <div class="content-box"><p class="content-text"><a class="link" target="_blank" href="https://yomedigital.com/" title="Link ad uno dei progetti realizzati o co-prodotti da Alessio Cardelli">Yome, una nuova piattaforma per il benessere a 360° ↗</a></p><p class="content-sub">2022 - Discovery, Design, Sviluppo, Evolution - Baasbox srl</p></div>
   <div class="content-box"><p class="content-text"><a class="link" target="_blank" href="https://www.sicurezzainternazionale.com/" title="Link ad uno dei progetti realizzati o co-prodotti da Alessio Cardelli">Sicurezza Internazionale, geopolitica accessibile ↗</a></p><p class="content-sub">2022 - Branding, Design, Sviluppo, Evolution - Baasbox srl</p></div>

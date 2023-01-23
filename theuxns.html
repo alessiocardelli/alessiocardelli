@@ -20,6 +20,27 @@
 <!-- - - - - - - - - - - - - - - - - - - - - - TITLE - - - - - - - - - - - - - - - - - - - - -->
   <title>The UX North Star | Alessio Cardelli</title>
 <!-- - - - - - - - - - - - - - - - - - - - - - TITLE - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - JAVASCRIPT - - - - - - - - - - - - - - - - - - - - -->
+<script type="text/javascript">
+function reveal() {
+var reveals = document.querySelectorAll(".reveal");
+
+for (var i = 0; i < reveals.length; i++) {
+  var windowHeight = window.innerHeight;
+  var elementTop = reveals[i].getBoundingClientRect().top;
+  var elementVisible = 150;
+
+  if (elementTop < windowHeight - elementVisible) {
+    reveals[i].classList.add("active");
+  } else {
+    reveals[i].classList.remove("active");
+  }
+}
+}
+
+window.addEventListener("scroll", reveal);
+</script>
+<!-- - - - - - - - - - - - - - - - - - - - - - JAVASCRIPT - - - - - - - - - - - - - - - - - - - - -->
   <link rel="stylesheet" type="text/css" href="assets/stylesheet.css"/>
   <link rel="icon" href="assets/general/favicon.png" alt="Foto di Alessio Cardelli">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,7 +78,7 @@ xxx
   <h3 class="quote-regular">Trovare la propria strada per inserirsi in un nuovo mondo lavorativo non è semplice, che tu sia junior o stia facendo uno switch di carriera. Per questo motivo ho creato il progetto The UX North Star, che propone una serie di contenuti per chi vuole fare i primi passi.</h3>
 </div>
 <!-- - - - - - - - - - - - - - - - - - - - - - SEPARATORE - - - - - - - - - - - - - - - - - - - - -->
-<div class="photo-grid margin-bottom-80">
+<div class="photo-grid margin-bottom-80 reveal">
   <div class="photo-box">
   <img class="photo-img" src="assets/theuxns/libro_1.png" alt="Immagine di uno dei touchpoint de The UX North Star"></img>
   </div>
@@ -79,7 +100,7 @@ Letto, recensito  e apprezzato già da decine di UX designer, sia junior che sen
   <div class="content-box"><p class="content-text"><a target="_blank" class="link" href="https://www.kobo.com/it/it/ebook/the-ux-north-star" title="Link alla pagina Kobo de The UX North Star, il libro">Acquista il libro per Kobo ↗</a></p><p class="content-sub">Solo in formato digitale per Kobo Rakuten.</p></div>
 </div>
 <!-- - - - - - - - - - - - - - - - - - - - - - SEPARATORE - - - - - - - - - - - - - - - - - - - - -->
-<div class="photo-grid margin-bottom-80">
+<div class="photo-grid margin-bottom-80 reveal">
   <div class="photo-box">
   <img class="photo-img" src="assets/theuxns/halley_1.png" alt="Immagine di UX Halley, newsletter per designer"></img>
   </div>
@@ -98,7 +119,7 @@ Letto, recensito  e apprezzato già da decine di UX designer, sia junior che sen
   <div class="content-box"><p class="content-text"><a target="_blank" class="link" href="uxhalley.html" title="Link alla pagina di iscrizione per UX Halley, newsletter">Iscriviti gratuitamente a UX Halley ↗</a></p><p class="content-sub">Riceverai le prossime ma puoi sempre recuperare le precedenti se vuoi.</p></div>
 </div>
 <!-- - - - - - - - - - - - - - - - - - - - - - SEPARATORE - - - - - - - - - - - - - - - - - - - - -->
-<div class="photo-grid margin-bottom-80">
+<div class="photo-grid margin-bottom-80 reveal">
   <div class="photo-box">
   <img class="photo-img" src="assets/theuxns/antimat_1.png" alt="Immagine del file UX Antimateria, per designer"></img>
   </div>
@@ -117,7 +138,7 @@ Letto, recensito  e apprezzato già da decine di UX designer, sia junior che sen
   <div class="content-box"><p class="content-text"><a target="_blank" class="link" href="uxantimateria.html" title="Link al form di richiesta accesso a UX Antimateria">Richiedi accesso a UX Antimateria ↗</a></p><p class="content-sub">Compila i dati e nel giro di poche ore ti condividerò il file (sì, lo faccio a mano uno per uno).</p></div>
 </div>
 <!-- - - - - - - - - - - - - - - - - - - - - - SEPARATORE - - - - - - - - - - - - - - - - - - - - -->
-<div class="trust-group margin-bottom-80">
+<div class="trust-group margin-bottom-80 reveal">
   <div class="trust-box">
     <p class="trust-text">Una guida onesta e trasparente, scritta da chi di cose le ha vissute e vuole condividere la propria esperienza per creare generazioni consapevoli di designer.</p>
       <div class="people-box">

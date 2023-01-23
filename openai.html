@@ -20,6 +20,27 @@
 <!-- - - - - - - - - - - - - - - - - - - - - - TITLE - - - - - - - - - - - - - - - - - - - - -->
   <title>A Midjourney Experiment | Alessio Cardelli</title>
 <!-- - - - - - - - - - - - - - - - - - - - - - TITLE - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - JAVASCRIPT - - - - - - - - - - - - - - - - - - - - -->
+<script type="text/javascript">
+function reveal() {
+var reveals = document.querySelectorAll(".reveal");
+
+for (var i = 0; i < reveals.length; i++) {
+  var windowHeight = window.innerHeight;
+  var elementTop = reveals[i].getBoundingClientRect().top;
+  var elementVisible = 150;
+
+  if (elementTop < windowHeight - elementVisible) {
+    reveals[i].classList.add("active");
+  } else {
+    reveals[i].classList.remove("active");
+  }
+}
+}
+
+window.addEventListener("scroll", reveal);
+</script>
+<!-- - - - - - - - - - - - - - - - - - - - - - JAVASCRIPT - - - - - - - - - - - - - - - - - - - - -->
   <link rel="stylesheet" type="text/css" href="assets/stylesheet.css"/>
   <link rel="icon" href="assets/general/favicon.png" alt="Foto di Alessio Cardelli">
   <link rel="preconnect" href="https://fonts.googleapis.com">
