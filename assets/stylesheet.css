@@ -488,6 +488,7 @@ h3 {
     height: 72px;
     background-color: white !important;
     width: 100%;
+    z-index: 1000;
   }
 
   .menu-links {
