@@ -660,6 +660,18 @@ h3 {
     font-size: 20px;
   }
 
+  .margin-bottom-80 {
+    margin-bottom: 40px !important;
+  }
+
+  .padding-bottom-80 {
+    padding-bottom: 40px !important;
+  }
+
+  .margin-bottom-160 {
+    margin-bottom: 80px !important;
+  }
+
 }
 
 /* MOBILE */
