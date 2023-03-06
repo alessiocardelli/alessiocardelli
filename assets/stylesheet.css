@@ -6,7 +6,6 @@ body {
   line-height: 150%;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  cursor: url("cursor.svg") 40 40, auto;
   color: #161B1C;
 }
 
