@@ -397,6 +397,35 @@ h3 {
   display: none;
 }
 
+.fab {
+  height: 72px;
+  width: 72px;
+  display: block;
+  background-color: #0067ff;
+  position: fixed;
+  bottom: 56px;
+  right: 56px;
+  border-radius: 36px;
+  box-shadow: 0px 10px 20px -5px #e2e2e9;
+  z-index: 99999;
+}
+
+.fab a {
+  display: block;
+  height: 72px;
+  width: 72px;
+  background-image: url(general/substack.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fab:hover, .fab a:hover {
+  background-color: #034dbb !important;
+  border-radius: 36px;
+  z-index: 99999;
+}
+
 
 /* TABLET ORIZZONTALE */
 @media (max-width: 1440px) {
