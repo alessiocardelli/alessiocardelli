@@ -1,0 +1,43 @@
+RewriteEngine On
+
+RewriteRule ^bv$ https://alessiocardelli.com/ita/alessiocardelli.vcf  [R=301,L]
+
+RewriteRule ^figma$ https://figma.com/@alessiocardelli  [R=301,L]
+
+RewriteRule ^ricette$ https://alessiocardelli.notion.site/Ricette-633132fc357742b585555dda9b1da8cd  [R=301,L]
+
+RewriteRule ^instagram$ https://www.instagram.com/alex.cardelli/  [R=301,L]
+
+RewriteRule ^libroux$ https://www.amazon.it/UX-North-Star-aspiranti-designer/dp/B0BCSBNM46/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1663659667&sr=8-1  [R=301,L]
+
+RewriteRule ^linkedin$ https://www.linkedin.com/in/alessiocardelli/  [R=301,L]
+
+RewriteRule ^meet$ https://calendly.com/acardelli/conosciamoci  [R=301,L]
+
+RewriteRule ^newsletter$ https://alessiocardelli.substack.com/  [R=301,L]
+
+RewriteRule ^note$ https://alessiocardelli.notion.site/I-miei-appunti-4ee870a71ef840dcbda2ab1f3387709d  [R=301,L]
+
+RewriteRule ^playlist$ https://open.spotify.com/playlist/4EyDHeRiCxNDenqsfbdb1J?si=d85677534c5a44d5  [R=301,L]
+
+RewriteRule ^podcast$ https://open.spotify.com/show/0o5YcQgB4Pe1bYfzg6X44z?si=27e09d25eeec4905  [R=301,L]
+
+RewriteRule ^privacy$ https://docs.google.com/document/d/1rdNQefMgVjZadCjvzTBCLrDOmBuSHJ4il9xQaPVDYxg/edit?usp=sharing  [R=301,L]
+
+RewriteRule ^skillmatrix$ https://www.linkedin.com/pulse/l%C9%99-ux-designer-di-vitruvio-alessio-cardelli/  [R=301,L]
+
+RewriteRule ^telegram$ https://t.me/acardelli  [R=301,L]
+
+RewriteRule ^tiktok$ https://www.tiktok.com/@alessiocardelli?_t=8VyuBX1OpPy&_r=1  [R=301,L]
+
+RewriteRule ^todoist$ https://get.todoist.io/181n8259fmdo  [R=301,L]
+
+RewriteRule ^twitter$ https://twitter.com/CardelliAlessio  [R=301,L]
+
+RewriteRule ^uxantimateria$ https://docs.google.com/spreadsheets/d/1820hwDsoexQCKW59q6Np4YGYYJ3Wr2b_5LC_FrqQFLw/edit?usp=sharing  [R=301,L]
+
+RewriteRule ^uxhalley$ https://www.linkedin.com/newsletters/6958682327916924928/  [R=301,L]
+
+RewriteRule ^whatsapp$ https://wa.me/+393337650394  [R=301,L]
+
+RewriteRule ^wishlist$ https://alessiocardelli.notion.site/La-mia-wishlist-3a956d73e30b4a20b949ec6558eed7b7  [R=301,L]
