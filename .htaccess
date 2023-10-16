@@ -38,4 +38,4 @@ RewriteRule ^uxhalley$ https://www.linkedin.com/newsletters/6958682327916924928/
 
 RewriteRule ^whatsapp$ https://wa.me/+393337650394  [R=301,L]
 
-RewriteRule ^wishlist$ https://alessiocardelli.notion.site/La-mia-wishlist-3a956d73e30b4a20b949ec6558eed7b7  [R=301,L]
+RewriteRule ^wishlist$ https://www.amazon.it/hz/wishlist/ls/2AW79A135SLZM?ref_=wl_share  [R=301,L]
