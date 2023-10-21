@@ -405,6 +405,14 @@ h1, .title-big {
 
 @media (max-width: 660px) {
 
+  .cursor {
+    display: none;
+  }
+
+  .cursor--small {
+    display: none;
+  }
+
   #dark-mode-toggle {
     top: 24px;
     right: 24px;
