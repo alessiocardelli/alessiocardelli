@@ -1,156 +1,227 @@
 <!doctype html>
 
-<html lang="it">
-<!-- - - - - - - - - - - - - - - - - - - - - - HEAD - - - - - - - - - - - - - - - - - - - - -->
+<html lang="it" class="html">
+
 <head>
   <meta charset="utf-8">
   <meta name="robots" content="index, follow">
   <meta name="googlebot" content="index, follow">
   <meta property="og:description" name="description" content="Product Designer & Strategist, UX/UI Mentor, scopri chi è Alessio Cardelli.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- - - - - - - - - - - - - - - - - - - - - - THUMB - - - - - - - - - - - - - - - - - - - - -->
-  <meta property="og:image" content="assets/thumbs/projects.png">
+
+  <meta property="og:image" content="assets/thumbs/generic.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="627">
-  <!-- - - - - - - - - - - - - - - - - - - - - - THUMB - - - - - - - - - - - - - - - - - - - - -->
+
   <meta property="og:type" content="website">
   <meta property="og:title" content="Alessio Cardelli, Product Designer & Strategist, UX/UI Specialst, Speaker, Mentor, Autore.">
   <meta property="og:site_name" content="Alessio Cardelli">
   <meta property="og:url" content="www.alessiocardelli.com">
-<!-- - - - - - - - - - - - - - - - - - - - - - TITLE - - - - - - - - - - - - - - - - - - - - -->
-  <title>Projects | Alessio Cardelli</title>
-<!-- - - - - - - - - - - - - - - - - - - - - - TITLE - - - - - - - - - - - - - - - - - - - - -->
-<!-- - - - - - - - - - - - - - - - - - - - - - JAVASCRIPT - - - - - - - - - - - - - - - - - - - - -->
-<script type="text/javascript">
-function reveal() {
-var reveals = document.querySelectorAll(".reveal");
 
-for (var i = 0; i < reveals.length; i++) {
-  var windowHeight = window.innerHeight;
-  var elementTop = reveals[i].getBoundingClientRect().top;
-  var elementVisible = 150;
+  <title>Projects - Alessio Cardelli, Designer & Strategist, UX/UI Specialst, Speaker, Mentor, Autore.</title>
 
-  if (elementTop < windowHeight - elementVisible) {
-    reveals[i].classList.add("active");
-  } else {
-    reveals[i].classList.remove("active");
+  <script type="text/javascript">
+  function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
   }
-}
-}
+  }
+  window.addEventListener("scroll", reveal);
+  </script>
 
-window.addEventListener("scroll", reveal);
-</script>
-<!-- - - - - - - - - - - - - - - - - - - - - - JAVASCRIPT - - - - - - - - - - - - - - - - - - - - -->
   <link rel="stylesheet" type="text/css" href="assets/stylesheet.css"/>
   <link rel="icon" href="assets/general/favicon.png" alt="Foto di Alessio Cardelli">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<!-- - - - - - - - - - - - - - - - - - - - - - HEAD - - - - - - - - - - - - - - - - - - - - -->
-<!--
-xxx
-xxx
- -->
+
 <body>
+
+<div class="cursor cursor--small"></div>
+<canvas class="cursor cursor--canvas" resize></canvas>
+
 <div class="container">
-<!-- - - - - - - - - - - - - - - - - - - - - - MENU - - - - - - - - - - - - - - - - - - - - -->
-<div class="menu">
-<div class="logo"><a href="index.html" title="Homepage del sito web di Alessio Cardelli">alessio cardelli</a></div>
-  <div class="menu-group">
-    <div class="menu-links"><a class="link" href="about.html" title="Pagina about del sito web di Alessio Cardelli">me</a></div>
-    <div class="menu-links"><a class="link" href="services.html" title="Pagina about del sito web di Alessio Cardelli">services</a></div>
-    <div class="menu-links"><a class="link" href="contents.html" title="Pagina contenuti del sito web di Alessio Cardelli">contents</a></div>
-    <div class="menu-links"><a class="link active-menu" href="projects.html" title="Pagina progetti del sito web di Alessio Cardelli">projects</a></div>
-  </div>
-  <div class="menu-mobile">menu</div>
+
+  <a id="icon-back" class="primary-btn" title="Torna alla homepage del sito" href="./index.html"><img class="arrow-black" title="Icona di freccia verso sinistra" src="assets/general/arrow-black.svg"></img><img class="arrow-white" title="Icona di freccia verso sinistra" src="assets/general/arrow-white.svg"></img></a>
+  <div id="dark-mode-toggle" class="primary-btn" onclick="confetti()"><img class="icon-mode-dark" title="Icona di luna" src="assets/general/moon.svg"></img><img title="Icona di sole" class="icon-mode-light" src="assets/general/sun.svg"></img></div>
+
+<!-- FINO A QUI TENERE SEMPRE TUTTO -->
+
+  <h1 class="hide">Alessio Cardelli, user experience designer e design manager</h1>
+  <p class="title-big">side-projects.</p>
+  <p class="text-big">Investo parte del mio tempo libero in progetti editoriali, contenuti e materiali destinati principalmente a designer. Creo e condivido per avere un impatto positivo sul mercato professionale della UX.</p>
+  <p class="text-link reveal"><a class="link" target="_blank" title="Pagina del libro per designer di Alessio Cardelli" href="projects/theuxns.html">The UX North Star</a> — Libro per designer, +500 copie vendute</p>
+  <p class="text-link reveal"><a class="link" target="_blank" title="Risorse per designer" href="projects/uxantimateria.html">UX Antimateria</a> — Risorse per designer (+1000)</p>
+  <p class="text-link reveal"><a class="link" target="_blank" title="Podcast scritto e registrato da Alessio Cardelli" href="projects/podcast.html">The UX North Star Extended Version</a> — Podcast gratuito</p>
+  <p class="text-link reveal"><a class="link" title="Playlist per designer su Spotify" href="https://www.alessiocardelli.com/playlist">UX Milky Way</a> — Playlist chill per UX/UI designer</p>
+  <p class="text-link reveal"><a class="link" title="Newsletter bisettimanale su LinkedIn" href="https://www.alessiocardelli.com/uxhalley">UX Halley</a> — Bi-weekly LinkedIn digest con link & news selezionate</p>
+  <p class="text-link reveal"><a class="link" title="Newlsetter substack di Alessio Cardelli" href="https://www.alessiocardelli.com/newsletter">Newsletter Substack</a> — Contenuti premium con cadenza irregolare</p>
+  <p class="text-link reveal"><a class="link" title="Profilo LinkedIn di Alessio Cardelli" href="https://www.alessiocardelli.com/linkedin">UX & Career Mentorship</a> — Cerchi un mentor? Parliamone</p>
+  <p class="text-link reveal"><a class="link" target="_blank" title="Evento per la città di FIumicino" href="projects/tedxfiumicino.html">TEDxFiumicino</a> — Cultura, sostenibilità e innovazione</p>
+
+<!-- DA A QUI IN POI TENERE SEMPRE TUTTO -->
+
+  <p class="footer"><a class="link" target="_blank" title="Pagina di informativa privacy" href="https://www.alessiocardelli.com/privacy">privacy</a> — <a class="link" target="_blank" title="Sitemap" href="sitemap.xml">sitemap 🗺️</a><br>© copyright of Alessio Cardelli - IT12871031006</p>
+
 </div>
 
-<div class="fab"><a href="newsletter.html" title="Newsletter Substack di Alessio Cardelli" target="_blank"></a></div>
-<!-- - - - - - - - - - - - - - - - - - - - - - MENU - - - - - - - - - - - - - - - - - - - - -->
-<!--
-xxx
-xxx
- -->
-<!-- - - - - - - - - - - - - - - - - - - - - - CONTENUTO - - - - - - - - - - - - - - - - - - - - -->
-<h1 class="big-title">Progettare è un atto di responsabilità.</h1>
-<div class="quote-group quote-group-home">
-  <img class="foto-quote" src="assets/general/alessio.png" alt="Immagine di Alessio Cardelli in primo piano su sfondo blu"></img>
-  <h2 class="quote-bold">Con questo "mantra" affronto ogni sfida progettuale: che sia per un grande business o per un piccolo side-project personale.</h2>
-  <h3 class="quote-regular">Comincia tutto dal “why”, ovvero dal perché. Perché vuoi realizzare un’app? Perché vuoi cambiare carriera? Perché vuoi organizzare una ricerca sul tuo business digitale? Definito il perché, il resto è relativamente semplice: provare, iterare, studiare e “fare”, per ottenere risultati tangibili.</h3>
-</div>
-<!-- - - - - - - - - - - - - - - - - - - - - - SEPARATORE - - - - - - - - - - - - - - - - - - - - -->
-<div class="projects-group">
-  <div class="project-box">
-    <img class="project-img" src="assets/projects/theuxns.png" alt="Immagine di un progetto di Alessio Cardelli"></img>
-    <div class="project-texts">
-      <h2 class="project-title">The UX North Star, UX Halley, UX Antimateria: iniziative per designer.</h2>
-      <p class="project-description">Quando si è agli inizi non è semplice, lo so bene. Per questo motivo ho creato questi progetti: contenuti, di diverso tipo, di grande valore, per lo più gratuiti, destinati a chi vuole fare i primi passi nel mondo della UX.
-      <br><br><a class="link" title="Link ad un progetto di Alessio Cardelli" href="theuxns.html">Scopri di più sulle iniziative  →</a></p>
-    </div>
-  </div>
-<div class="project-box reveal">
-  <img class="project-img" src="assets/projects/figma.png" alt="Immagine di un progetto di Alessio Cardelli"></img>
-  <div class="project-texts">
-    <h2 class="project-title">Figma assets for everyone: accedi alla mia personale libreria di materiali e template.</h2>
-    <p class="project-description">Quando mi rendo conto che qualcosa che creo per me può essere utile anche per altre persone o designer, la rendo un template, la arricchisco con i contenuti giusti, e la pubblico gratis per chiunque voglia. Sharing is caring.
-    <br><br><a class="link" target="_blank" title="Link ad un progetto di Alessio Cardelli" href="figma.html">Vai alla pagina di Figma Community  ↗</a></p>
-  </div>
-</div>
-<div class="project-box reveal">
-  <img class="project-img" src="assets/projects/openai.png" alt="Immagine di un progetto di Alessio Cardelli"></img>
-  <div class="project-texts">
-    <h2 class="project-title">The Infinite Lands: un progetto sperimentale con Open AI e Midjourney.</h2>
-    <p class="project-description">Il 2022 è stato l’anno in cui sistemi text-to-image, basati su Open AI, hanno preso piede. Il funzionamento è semplice: tu scrivi, l’AI legge, comprende, pensa, elabora e ti fornisce un’immagine. E che immagini!
-    <br><br><a class="link" title="Link ad un progetto di Alessio Cardelli" href="openai.html">Scopri di più sul progetto  →</a></p>
-  </div>
-</div>
-<div class="project-box no-margin-bottom reveal">
-  <img class="project-img" src="assets/projects/tedxfiumicino.png" alt="Immagine di un progetto di Alessio Cardelli"></img>
-  <div class="project-texts">
-    <h2 class="project-title">TEDxFiumicino: tra scienza, mare, cultura, cielo e innovazione.</h2>
-    <p class="project-description">Sono licenziatario TEDxFiumicino e insieme ad un team eterogeneo, competente e visionario coopero per organizzare un (super) evento per la città di Fiumicino, che vede affrontare temi di cultura, scienza, informazione e futuro.
-    <br><br><a class="link" target="_blank" title="Link ad un progetto di Alessio Cardelli" href="http://tedxfiumicino.com/">Approfondisci sul sito dell’evento  ↗</a></p>
-  </div>
-</div>
-</div>
-<!-- - - - - - - - - - - - - - - - - - - - - - SEPARATORE - - - - - - - - - - - - - - - - - - - - -->
-<div class="content-list no-padding-bottom">
-  <div class="content-title reveal">Gli ultimi casi studio</div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://yomedigital.com/" title="Link ad uno dei progetti realizzati o co-prodotti da Alessio Cardelli">Yome, una nuova piattaforma per il benessere a 360° ↗</a></p><p class="content-sub">2022 - Discovery, Design, Sviluppo, Evolution - Baasbox srl</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://www.sicurezzainternazionale.com/" title="Link ad uno dei progetti realizzati o co-prodotti da Alessio Cardelli">Sicurezza Internazionale, geopolitica accessibile ↗</a></p><p class="content-sub">2022 - Branding, Design, Sviluppo, Evolution - Baasbox srl</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://cryptobooks.tax/" title="Link ad uno dei progetti realizzati o co-prodotti da Alessio Cardelli">Cryptobooks, plusvalenze crypto facili facili ↗</a></p><p class="content-sub">2022 -  Research, Design, Evolution - Baasbox srl</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://www.itaddeo.com/" title="Link ad uno dei progetti realizzati o co-prodotti da Alessio Cardelli">I Taddeo, prodotti umbri di qualità eccezionale ↗</a></p><p class="content-sub">2022 -  Branding, Design, Sviluppo, Evolution - Baasbox srl</p></div>
-  <div class="inline-cta reveal"><a class="link" href="all-cases.html" title="Pagina di tutti i casi studio di Alessio Cardelli">Vedi tutti i case studies  →</a></div>
-</div>
-<!-- - - - - - - - - - - - - - - - - - - - - - CONTENUTO - - - - - - - - - - - - - - - - - - - - -->
-<!--
-xxx
-xxx
- -->
- <!-- - - - - - - - - - - - - - - - - - - - - - FOOTER - - - - - - - - - - - - - - - - - - - - -->
- <div class="footer">
- <hr class="footer-line"></hr>
- <div class="footer-contents">
-   <div class="footer-block">
-     <div class="logo"><a href="index.html" title="Homepage del sito web di Alessio Cardelli">alessio cardelli</a></div>
-     <div class="footer-link"><a class="link" href="newsletter.html" title="Form per iscriversi alla newsletter personale di Alessio Cardelli">iscriviti alla mia newsletter</a></div>
-     <div class="footer-link"><a class="link" href="mailto:alessiocardellidesign@gmail.com" target="_blank" title="Indirizzo email di Alessio Cardelli">scrivimi una email ✉️</a></div>
-   </div>
-   <div class="footer-block">
-     <div class="footer-link"><a class="link" href="privacy.html" target="_blank" title="Pagina informativa privacy di Alessio Cardelli">privacy</a></div>
-     <div class="footer-link"><a class="link" href="links.html" target="_blank" title="Link rapidi di Alessio Cardelli">link rapidi</a></div>
-     <div class="footer-link"><a class="link" href="sitemap.xml" target="_blank" title="Sitemap del website di Alessio Cardelli">sitemap</a></div>
-   </div>
-   <div class="footer-block">
-     <div class="footer-link"><a class="link" href="linkedin.html" target="_blank" title="Profilo LinkedIn di Alessio Cardelli">linkedIn ↗</a></div>
-     <div class="footer-link"><a class="link" href="instagram.html" target="_blank" title="Profilo Instagram di Alessio Cardelli">instagram ↗</a></div>
-     <div class="footer-link"><a class="link" href="tiktok.html" target="_blank" title="Profilo TikTok di Alessio Cardelli">tiktok ↗</a></div>
-   </div>
- </div>
- <div class="footer-copyright">copyright of alessio cardelli | IT12871031006</div>
- </div>
- <!-- - - - - - - - - - - - - - - - - - - - - - FOOTER - - - - - - - - - - - - - - - - - - - - -->
- </div>
- </body>
- </html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script>
+  function toggleDarkMode() {
+      const htmlElement = document.documentElement;
+
+      const hasDarkModeClass = htmlElement.classList.contains("dark-mode");
+
+      if (hasDarkModeClass) {
+          htmlElement.classList.remove("dark-mode");
+      } else {
+          htmlElement.classList.add("dark-mode");
+      }
+  }
+
+  const darkModeToggle = document.getElementById("dark-mode-toggle");
+
+  darkModeToggle.addEventListener("click", toggleDarkMode);
+</script>
+
+<script>
+    var magnets = document.querySelectorAll('.magnetic')
+  var strength = 50
+
+  magnets.forEach( (magnet) => {
+    magnet.addEventListener('mousemove', moveMagnet );
+    magnet.addEventListener('mouseout', function(event) {
+      TweenMax.to( event.currentTarget, 1, {x: 0, y: 0, ease: Power4.easeOut})
+    } );
+  });
+
+  function moveMagnet(event) {
+    var magnetButton = event.currentTarget
+    var bounding = magnetButton.getBoundingClientRect()
+
+    TweenMax.to( magnetButton, 1, {
+      x: ((( event.clientX - bounding.left)/magnetButton.offsetWidth) - 0.5) * strength,
+      y: ((( event.clientY - bounding.top)/magnetButton.offsetHeight) - 0.5) * strength,
+      ease: Power4.easeOut
+    })
+
+  }
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+
+<script>
+  // set the starting position of the cursor outside of the screen
+  let clientX = 100;
+  let clientY = 100;
+  const innerCursor = document.querySelector(".cursor--small");
+
+  const initCursor = () => {
+    // add listener to track the current mouse position
+    document.addEventListener("mousemove", e => {
+      clientX = e.clientX;
+      clientY = e.clientY;
+    });
+
+    // transform the innerCursor to the current mouse position
+    // use requestAnimationFrame() for smooth performance
+    const render = () => {
+      innerCursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
+      // if you are already using TweenMax in your project, you might as well
+      // use TweenMax.set() instead
+      // TweenMax.set(innerCursor, {
+      //   x: clientX,
+      //   y: clientY
+      // });
+
+      requestAnimationFrame(render);
+    };
+    requestAnimationFrame(render);
+  };
+
+  initCursor();
+
+  let lastX = 0;
+  let lastY = 0;
+  let isStuck = false;
+  let showCursor = false;
+  let group, stuckX, stuckY, fillOuterCursor;
+
+  const initCanvas = () => {
+    const canvas = document.querySelector(".cursor--canvas");
+    const shapeBounds = {
+      width: 75,
+      height: 75
+    };
+    paper.setup(canvas);
+    const strokeColor = "#BEBEBE";
+    const strokeWidth = 1;
+    const segments = 8;
+    const radius = 20;
+
+    // we'll need these later for the noisy circle
+    const noiseScale = 150; // speed
+    const noiseRange = 4; // range of distortion
+    let isNoisy = false; // state
+
+    // the base shape for the noisy circle
+    const polygon = new paper.Path.RegularPolygon(
+      new paper.Point(0, 0),
+      segments,
+      radius
+    );
+    polygon.strokeColor = strokeColor;
+    polygon.strokeWidth = strokeWidth;
+    polygon.smooth();
+    group = new paper.Group([polygon]);
+    group.applyMatrix = false;
+
+    const noiseObjects = polygon.segments.map(() => new SimplexNoise());
+    let bigCoordinates = [];
+
+    // function for linear interpolation of values
+    const lerp = (a, b, n) => {
+      return (1 - n) * a + n * b;
+    };
+
+    // function to map a value from one range to another range
+    const map = (value, in_min, in_max, out_min, out_max) => {
+      return (
+        ((value - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min
+      );
+    };
+
+    // the draw loop of Paper.js
+    // (60fps with requestAnimationFrame under the hood)
+    paper.view.onFrame = event => {
+      // using linear interpolation, the circle will move 0.2 (20%)
+      // of the distance between its current position and the mouse
+      // coordinates per Frame
+      lastX = lerp(lastX, clientX, 0.2);
+      lastY = lerp(lastY, clientY, 0.2);
+      group.position = new paper.Point(lastX, lastY);
+    }
+  }
+
+  initCanvas();
+</script>
+
+</body>
+
+</html>

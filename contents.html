@@ -1,147 +1,253 @@
 <!doctype html>
 
-<html lang="it">
-<!-- - - - - - - - - - - - - - - - - - - - - - HEAD - - - - - - - - - - - - - - - - - - - - -->
+<html lang="it" class="html">
+
 <head>
   <meta charset="utf-8">
   <meta name="robots" content="index, follow">
   <meta name="googlebot" content="index, follow">
   <meta property="og:description" name="description" content="Product Designer & Strategist, UX/UI Mentor, scopri chi è Alessio Cardelli.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- - - - - - - - - - - - - - - - - - - - - - THUMB - - - - - - - - - - - - - - - - - - - - -->
-  <meta property="og:image" content="assets/thumbs/contents.png">
+
+  <meta property="og:image" content="assets/thumbs/generic.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="627">
-  <!-- - - - - - - - - - - - - - - - - - - - - - THUMB - - - - - - - - - - - - - - - - - - - - -->
+
   <meta property="og:type" content="website">
   <meta property="og:title" content="Alessio Cardelli, Product Designer & Strategist, UX/UI Specialst, Speaker, Mentor, Autore.">
   <meta property="og:site_name" content="Alessio Cardelli">
   <meta property="og:url" content="www.alessiocardelli.com">
-<!-- - - - - - - - - - - - - - - - - - - - - - TITLE - - - - - - - - - - - - - - - - - - - - -->
-  <title>Contents | Alessio Cardelli</title>
-<!-- - - - - - - - - - - - - - - - - - - - - - TITLE - - - - - - - - - - - - - - - - - - - - -->
-<!-- - - - - - - - - - - - - - - - - - - - - - JAVASCRIPT - - - - - - - - - - - - - - - - - - - - -->
-<script type="text/javascript">
-function reveal() {
-var reveals = document.querySelectorAll(".reveal");
 
-for (var i = 0; i < reveals.length; i++) {
-  var windowHeight = window.innerHeight;
-  var elementTop = reveals[i].getBoundingClientRect().top;
-  var elementVisible = 150;
+  <title>Contents - Alessio Cardelli, Designer & Strategist, UX/UI Specialst, Speaker, Mentor, Autore.</title>
 
-  if (elementTop < windowHeight - elementVisible) {
-    reveals[i].classList.add("active");
-  } else {
-    reveals[i].classList.remove("active");
+  <script type="text/javascript">
+  function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
   }
-}
-}
+  }
+  window.addEventListener("scroll", reveal);
+  </script>
 
-window.addEventListener("scroll", reveal);
-</script>
-<!-- - - - - - - - - - - - - - - - - - - - - - JAVASCRIPT - - - - - - - - - - - - - - - - - - - - -->
   <link rel="stylesheet" type="text/css" href="assets/stylesheet.css"/>
   <link rel="icon" href="assets/general/favicon.png" alt="Foto di Alessio Cardelli">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<!-- - - - - - - - - - - - - - - - - - - - - - HEAD - - - - - - - - - - - - - - - - - - - - -->
-<!--
-xxx
-xxx
- -->
+
 <body>
+
+<div class="cursor cursor--small"></div>
+<canvas class="cursor cursor--canvas" resize></canvas>
+
 <div class="container">
-<!-- - - - - - - - - - - - - - - - - - - - - - MENU - - - - - - - - - - - - - - - - - - - - -->
-<div class="menu">
-<div class="logo"><a href="index.html" title="Homepage del sito web di Alessio Cardelli">alessio cardelli</a></div>
-  <div class="menu-group">
-    <div class="menu-links"><a class="link" href="about.html" title="Pagina about del sito web di Alessio Cardelli">me</a></div>
-    <div class="menu-links"><a class="link" href="services.html" title="Pagina about del sito web di Alessio Cardelli">services</a></div>
-    <div class="menu-links"><a class="link active-menu" href="contents.html" title="Pagina contenuti del sito web di Alessio Cardelli">contents</a></div>
-    <div class="menu-links"><a class="link" href="projects.html" title="Pagina progetti del sito web di Alessio Cardelli">projects</a></div>
-  </div>
-  <div class="menu-mobile">menu</div>
+
+  <a id="icon-back" class="primary-btn" title="Torna alla homepage del sito" href="./index.html"><img class="arrow-black" title="Icona di freccia verso sinistra" src="assets/general/arrow-black.svg"></img><img class="arrow-white" title="Icona di freccia verso sinistra" src="assets/general/arrow-white.svg"></img></a>
+  <div id="dark-mode-toggle" class="primary-btn" onclick="confetti()"><img class="icon-mode-dark" title="Icona di luna" src="assets/general/moon.svg"></img><img title="Icona di sole" class="icon-mode-light" src="assets/general/sun.svg"></img></div>
+
+<!-- FINO A QUI TENERE SEMPRE TUTTO -->
+
+  <h1 class="hide">Alessio Cardelli, user experience designer e design manager</h1>
+  <p class="title-big">contenuti per te.</p>
+  <p class="text-big">Scrivo articoli di settori destinati a junior e senior, registro video e podcast, organizzo webinar. Parlo di design, customer experience, strategia e business, produttività e carriera. </p>
+  <p class="text-link reveal">2023 — <a target="_blank" class="link" title="Intervista per Start Grow Up" href="https://open.spotify.com/episode/3MpstBXGf7NkWICuwhn4IF?si=5db0f4d7ca44425c">Intervista per Start Grow Up</a></p>
+  <p class="text-link reveal">2023 — <a class="link" title="Conviene acquistare o noleggiare un’auto?" href="contents/noleggio.html">Conviene acquistare o noleggiare un’auto?</a></p>
+  <p class="text-link reveal">2023 — <a target="_blank" class="link" title="Angeli e demoni nelle chat aziendali" href="https://open.spotify.com/episode/2aecbbnfzV427gKgpuC8ln?si=cd3a7f3e4f5f4b0b">Angeli e demoni nelle chat aziendali</a></p>
+  <p class="text-link reveal">2023 — <a class="link" title="The UX North Star Ext. Version (10 puntate)" href="projects/podcast.html">The UX North Star Ext. Version (10 puntate)</a></p>
+  <p class="text-link reveal">2023 — <a target="_blank" class="link" title="Conversation design (articolo)" href="https://baasbox.com/magazine/conversation-design-conversazione-tu-per-tu">Conversation design (articolo)</a></p>
+  <p class="text-link reveal">2023 — <a target="_blank" class="link" title="Gamification, una partita aperta" href="https://open.spotify.com/episode/4wY6MKaZkXzBfjdyoe8K7g?si=b514a0c41f58440f">Gamification, una partita aperta</a></p>
+  <p class="text-link reveal">2023 — <a class="link" title="Freelance, un metodo per calcolare i preventivi" href="contents/preventivi.html">Freelance, un metodo per calcolare i preventivi</a></p>
+  <span class="spazio"></span>
+  <p class="text-link reveal">2022 — <a target="_blank" class="link" title="3D, realtà virtuale & customer experience" href="https://open.spotify.com/episode/2cJMqUxvDaRomzraFcyLFF?si=c76b7219961e400a">3D, realtà virtuale & customer experience</a></p>
+  <p class="text-link reveal">2022 — <a class="link" title="The UX North Star (libro)" href="projects/theuxns.html">The UX North Star (libro)</a></p>
+  <p class="text-link reveal">2022 — <a target="_blank" class="link" title="User Experience per la Virtual Reality" href="https://baasbox.com/magazine/virtual-reality-alla-prova-della-ux/">User Experience per la Virtual Reality</a></p>
+  <p class="text-link reveal">2022 — <a target="_blank" class="link" title="Parliamo di ricerca con Chiara Schettino" href="https://open.spotify.com/episode/4GiKIpiewM0q8FVnYwhlbT?si=d5967203ca54401b&nd=1">Parliamo di ricerca con Chiara Schettino</a></p>
+  <p class="text-link reveal">2022 — <a target="_blank" class="link" title="VR, Blockchain, NFT e nuove tecnologie" href="https://open.spotify.com/episode/0k8T72Ifwi8diOvQiswOXj?si=4ad511fc08704506&nd=1">VR, Blockchain, NFT e nuove tecnologie</a></p>
+  <p class="text-link reveal">2022 — <a target="_blank" class="link" title="Divergere per convergere" href="https://baasbox.com/magazine/condivisione-nel-progetto-digitale-divergere-convergere/">Divergere per convergere</a></p>
+  <p class="text-link reveal">2022 — <a target="_blank" class="link" title="Skill matrix di Vitruvio" href="https://www.linkedin.com/pulse/l%C9%99-ux-designer-di-vitruvio-alessio-cardelli/">Skill matrix di Vitruvio</a></p>
+  <p class="text-link reveal">2022 — <a target="_blank" class="link" title="Parliamo di CX con Simone Mariano" href="https://open.spotify.com/episode/3LHP15PLJ16MWOEjTfxNye?si=453acd71702440e7&nd=1">Parliamo di CX con Simone Mariano</a></p>
+  <p class="text-link reveal">2022 — <a target="_blank" class="link" title="Parliamo di ricerca con Paola Bisogno" href="https://open.spotify.com/episode/1AzsNYkHsXRpyPeM0Du6Xf?si=a678259a29dc460a&nd=1">Parliamo di ricerca con Paola Bisogno</a></p>
+  <p class="text-link reveal">2022 — <a target="_blank" class="link" title="Futuro e formazione nella UX" href="https://anchor.fm/universitadesign/episodes/Alessio-Cardelli---Head-of-Product-Design-e1frn83">Futuro e formazione nella UX</a></p>
+  <p class="text-link reveal">2022 — <a target="_blank" class="link" title="Parliamo di ricerca con Paul Romero" href="https://open.spotify.com/episode/4nvlY9SPA7WkGIw3bvyRJI?si=ab657247e36c4a13&nd=1">Parliamo di ricerca con Paul Romero</a></p>
+  <p class="text-link reveal">2022 — <a target="_blank" class="link" title="UX, ricerca e customer experience" href="https://open.spotify.com/episode/0WlZshGpNgC9O9dxs6t7U2?si=88fecdd66960455c&nd=1">UX, ricerca e customer experience</a></p>
+  <p class="text-link reveal">2022 — <a target="_blank" class="link" title="Ricerca, validazione e processi di UX" href="https://www.facebook.com/pauljesusbenitesromero/videos/1148817469195333/">Ricerca, validazione e processi di UX</a></p>
+  <span class="spazio"></span>
+  <p class="text-link reveal">2021 — <a target="_blank" class="link" title="Perché investire in UX, spiegato con i numeri" href="https://baasbox.com/magazine/perche-investire-in-ux/">Perché investire in UX, spiegato con i numeri</a></p>
+  <p class="text-link reveal">2021 — <a target="_blank" class="link" title="Lego e progettazione digitale" href="https://open.spotify.com/episode/5wSwYXKE0Nf3X6cIAZaths?si=10903964a34b4fb8&nd=1">Lego e progettazione digitale</a></p>
+  <p class="text-link reveal">2021 — <a target="_blank" class="link" title="Minimum Viable Product & Fast go to market" href="https://baasbox.com/magazine/mvp-o-fast-go-to-market-facciamo-chiarezza/">Minimum Viable Product & Fast go to market</a></p>
+  <p class="text-link reveal">2021 — <a target="_blank" class="link" title="Il rapporto tra designer e developer" href="https://www.facebook.com/100003325770724/videos/2870956809782981/">Il rapporto tra designer e developer</a></p>
+  <p class="text-link reveal">2021 — <a target="_blank" class="link" title="Progettare un design system con gli occhi di un dev" href="https://www.youtube.com/watch?v=kfrVzHYTIG4&t=2s&ab_channel=TheCommunitiesBay">Progettare un design system con gli occhi di un dev</a></p>
+  <span class="spazio"></span>
+  <p class="text-link reveal">2020 — <a target="_blank" class="link" title="Calcolare il ROI delle attività di UX" href="https://baasbox.com/magazine/calcolare-il-roi-degli-investimenti-in-ux/">Calcolare il ROI delle attività di UX</a></p>
+  <p class="text-link reveal">2020 — <a target="_blank" class="link" title="Anche i Big hanno i bug" href="https://baasbox.com/magazine/big-hanno-bug/">Anche i Big hanno i bug</a></p>
+  <p class="text-link reveal">2020 — <a target="_blank" class="link" title="Progettare un sito web accessibile" href="https://baasbox.com/magazine/performance-sito-web-business/">Progettare un sito web accessibile</a></p>
+  <p class="text-link reveal">2020 — <a target="_blank" class="link" title="Le nuovi abitudini di acquisto post-lockdown" href="https://baasbox.com/magazine/vendere-online-dopo-lockdown-e-commerce/">Le nuovi abitudini di acquisto post-lockdown</a></p>
+  <p class="text-link reveal">2020 — <a target="_blank" class="link" title="Personal branding & UX design" href="https://www.youtube.com/watch?v=o_rutV81l74&t=1s&ab_channel=Raf%F0%9F%8C%8B">Personal branding & UX design</a></p>
+  <p class="text-link reveal">2020 — <a target="_blank" class="link" title="Come nasce un prodotto digitale" href="https://www.youtube.com/watch?v=7gIynRyZqHE&t=1s&ab_channel=e-makers">Come nasce un prodotto digitale</a></p>
+
+<!-- DA A QUI IN POI TENERE SEMPRE TUTTO -->
+
+  <p class="footer"><a class="link" target="_blank" title="Pagina di informativa privacy" href="https://www.alessiocardelli.com/privacy">privacy</a> — <a class="link" target="_blank" title="Sitemap" href="sitemap.xml">sitemap 🗺️</a><br>© copyright of Alessio Cardelli - IT12871031006</p>
+
 </div>
 
-<div class="fab"><a href="newsletter.html" title="Newsletter Substack di Alessio Cardelli" target="_blank"></a></div>
-<!-- - - - - - - - - - - - - - - - - - - - - - MENU - - - - - - - - - - - - - - - - - - - - -->
-<!--
-xxx
-xxx
- -->
-<!-- - - - - - - - - - - - - - - - - - - - - - CONTENUTO - - - - - - - - - - - - - - - - - - - - -->
-<h1 class="big-title">Condividere è il primo ingrediente del successo.</h1>
-<div class="quote-group quote-group-home">
-  <img class="foto-quote" src="assets/general/alessio.png" alt="Immagine di Alessio Cardelli in primo piano su sfondo blu"></img>
-  <h2 class="quote-bold">Amo studiare, comprendere, creare e divulgare: contenuti su temi che riguardano la UX, il design, il business digitale e l’innovazione.</h2>
-  <h3 class="quote-regular">Come funziona? Come si può fare meglio? Come si può fare diversamente? Perché questo è meglio dell’altro? Almeno per me, queste domande sono all’ordine del giorno e riguardano gli argomenti più disparati. Qui tengo traccia di tutto questo, per me e per te che vuoi approfondire.</h3>
-</div>
-<!-- - - - - - - - - - - - - - - - - - - - - - SEPARATORE - - - - - - - - - - - - - - - - - - - - -->
-<div class="content-list no-padding-bottom">
-  <div class="content-title">Alcuni dei miei contenuti</div>
-  <div class="content-box"><p class="content-text"><a class="link" target="_blank" href="https://open.spotify.com/episode/3MpstBXGf7NkWICuwhn4IF?si=5db0f4d7ca44425c" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">Invervista a tema design per Start Grow Up  ↗</a></p><p class="content-sub">🎙️ Podcast - 2023 , 21 Ago - 44 min</p></div>
-  <div class="content-box"><p class="content-text"><a class="link" href="contents/noleggio.html" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">Conviene acquistare o noleggiare un'auto? →</a></p><p class="content-sub">📰 Articolo - 2023 , 14 Mag - 8 min</p></div>
-  <div class="content-box"><p class="content-text"><a class="link" target="_blank" href="https://open.spotify.com/episode/2aecbbnfzV427gKgpuC8ln?si=cd3a7f3e4f5f4b0b" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">Angeli e demoni nelle chat aziendali  ↗</a></p><p class="content-sub">🎙️ Podcast - 2023 , 24 Mar - 11 min</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://baasbox.com/magazine/conversation-design-conversazione-tu-per-tu" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">Conversation Design: una conversazione a tu per tu  ↗</a></p><p class="content-sub">📰  Articolo - 2023 , 07 Mar - 5 min</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://open.spotify.com/episode/4wY6MKaZkXzBfjdyoe8K7g?si=b514a0c41f58440f" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">La gamification, una partita aperta ↗</a></p><p class="content-sub">🎙️ Podcast - 2023 , 21 Feb - 14 min</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" href="contents/freelance_preventivi.html" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">Freelance: un metodo per calcolare un preventivo →</a></p><p class="content-sub">📰 Articolo - 2023 , 10 Gen - 8 min</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://open.spotify.com/episode/2cJMqUxvDaRomzraFcyLFF?si=c76b7219961e400a" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">3D e realtà virtuale, per una Customer Experience omnicanale ↗</a></p><p class="content-sub">🎙️ Podcast - 2022 , 20 Dic - 11 min</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="libroux.html" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">The UX North Star, libro per aspiranti e junior UX designer ↗</a></p><p class="content-sub">📘  Libro - 2022 , 23 Set - 185 pagine</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="uxhalley.html" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">UX Halley, newsletter bisettimanale per designer cool ↗</a></p><p class="content-sub">✉️ Newsletter bisettimanale - Prima edizione nel 2022</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://baasbox.com/magazine/virtual-reality-alla-prova-della-ux/" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">Parliamo di user experience per la virtual reality ↗</a></p><p class="content-sub">📰  Articolo - 2022 , 30 Mag - 5 min</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://open.spotify.com/episode/4GiKIpiewM0q8FVnYwhlbT?si=d5967203ca54401b&nd=1" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">Intervista a Chiara Schettino per Catobi: parliamo di ricerca ↗</a></p><p class="content-sub">🎙️ Podcast - 2022 , 5 Mag - 20 min</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://open.spotify.com/episode/0k8T72Ifwi8diOvQiswOXj?si=4ad511fc08704506&nd=1" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">Vivere nel metaverso: VR, blockchain, NFT e nuove tecnologie ↗</a></p><p class="content-sub">🎙️ Podcast - 2022 , 29 Apr - 30 min</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://baasbox.com/magazine/condivisione-nel-progetto-digitale-divergere-convergere/" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">La condivisione in un progetto digitale: divergere per convergere ↗</a></p><p class="content-sub">📰  Articolo - 2022 , 07 Mar - 5 min</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://www.linkedin.com/pulse/l%C9%99-ux-designer-di-vitruvio-alessio-cardelli/" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">UX designer di Vitruvio: skill matrix e skill assestment ↗</a></p><p class="content-sub">📰  Articolo - 2022 , 02 Mar - 8 min</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://open.spotify.com/episode/3LHP15PLJ16MWOEjTfxNye?si=453acd71702440e7&nd=1" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">Customer Experience e User Experience, dialogo con Simone Mariano ↗</a></p><p class="content-sub">🎙️ Podcast - 2022 , 12 Mag - 38 min</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://baasbox.com/magazine/perche-investire-in-ux/" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">Perché investire in attività di UX spiegato con i numeri ↗</a></p><p class="content-sub">📰  Articolo - 2021 , 15 Ott - 6 min</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://open.spotify.com/episode/1AzsNYkHsXRpyPeM0Du6Xf?si=a678259a29dc460a&nd=1" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">Intervista a Paola Bisogno per Catobi: parliamo di ricerca ↗</a></p><p class="content-sub">🎙️ Podcast - 2022 , 27 Apr - 16 min</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://baasbox.com/magazine/calcolare-il-roi-degli-investimenti-in-ux/" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">Calcolare il ROI sulle attività di User Experience ↗</a></p><p class="content-sub">📰  Articolo - 2020 , 11 Dic - 6 min</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://open.spotify.com/episode/4nvlY9SPA7WkGIw3bvyRJI?si=ab657247e36c4a13&nd=1" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">Intervista a Paul Romero per Catobi: parliamo di ricerca ↗</a></p><p class="content-sub">🎙️ Podcast - 2022 , 21 Apr - 19 min</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://anchor.fm/universitadesign/episodes/Alessio-Cardelli---Head-of-Product-Design-e1frn83" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">Futuro e formazione per chi vuole fare UX design ↗</a></p><p class="content-sub">🎙️ Podcast - 2022 , 17 Mar - 26 min</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://open.spotify.com/episode/0WlZshGpNgC9O9dxs6t7U2?si=88fecdd66960455c&nd=1" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">UX, ricerca e Customer Experience: innovation sprinz con Catobi ↗</a></p><p class="content-sub">🎙️ Podcast - 2022 , 10 Apr - 30 min</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://open.spotify.com/episode/5wSwYXKE0Nf3X6cIAZaths?si=10903964a34b4fb8&nd=1" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">Lego e progettazione digitale, una puntata per Space in a Box ↗</a></p><p class="content-sub">🎙️ Podcast - 2021 ,  Apr - 34 min</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://baasbox.com/magazine/mvp-o-fast-go-to-market-facciamo-chiarezza/" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">Minimum Viable Product o Fast Go To Market? Parliamone ↗</a></p><p class="content-sub">📰  Articolo - 2021 , 8 Giu - 6 min</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://baasbox.com/magazine/big-hanno-bug/" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">Anche i Big hanno i Bug ↗</a></p><p class="content-sub">📰  Articolo - 2020 , 27 Ott - 6 min</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://www.facebook.com/pauljesusbenitesromero/videos/1148817469195333/" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">Ricerca, validazione e processi di UX: webinar live con Thesignof ↗</a></p><p class="content-sub">🎥 Webinar - 2022, 23 Feb - 1:54h</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://www.facebook.com/100003325770724/videos/2870956809782981/" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">Il rapporto tra designer e developer: webinar live con Thesignof ↗</a></p><p class="content-sub">🎥 Webinar - 2021, 22 Lug - 1:08h</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://www.youtube.com/watch?v=kfrVzHYTIG4&t=2s&ab_channel=TheCommunitiesBay" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">Progettare un design system con gli occhi di un developer ↗</a></p><p class="content-sub">🎥 Webinar - 2021, 17 Giu - 1:31h</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://baasbox.com/magazine/performance-sito-web-business/" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">Progettare un sito web accessibile ↗</a></p><p class="content-sub">📃  Report - 2020 , 07 Lug - Download</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://baasbox.com/magazine/vendere-online-dopo-lockdown-e-commerce/" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">Le nuovi abitudini di acquisto post lockdown ↗</a></p><p class="content-sub">📃  Report - 2020 , 18 Giu - Download</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://www.youtube.com/watch?v=o_rutV81l74&t=1s&ab_channel=Raf%F0%9F%8C%8B" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">Personal branding e UX design: intervista per Design Informale ↗</a></p><p class="content-sub">🎥  Intervista - 2020, 19 Ott - 31m</p></div>
-  <div class="content-box reveal"><p class="content-text"><a class="link" target="_blank" href="https://www.youtube.com/watch?v=7gIynRyZqHE&t=1s&ab_channel=e-makers" title="Link ad uno dei contenuti realizzati o co-prodotti da Alessio Cardelli">Come nasce un prodotto digitale: intervista per E-makers ↗</a></p><p class="content-sub">🎥  Intervista - 2020, 15 Giu - 8m</p></div>
-</div>
-<!-- - - - - - - - - - - - - - - - - - - - - - CONTENUTO - - - - - - - - - - - - - - - - - - - - -->
-<!--
-xxx
-xxx
- -->
- <!-- - - - - - - - - - - - - - - - - - - - - - FOOTER - - - - - - - - - - - - - - - - - - - - -->
- <div class="footer">
- <hr class="footer-line"></hr>
- <div class="footer-contents">
-   <div class="footer-block">
-     <div class="logo"><a href="index.html" title="Homepage del sito web di Alessio Cardelli">alessio cardelli</a></div>
-     <div class="footer-link"><a class="link" href="newsletter.html" title="Form per iscriversi alla newsletter personale di Alessio Cardelli">iscriviti alla mia newsletter</a></div>
-     <div class="footer-link"><a class="link" href="mailto:alessiocardellidesign@gmail.com" target="_blank" title="Indirizzo email di Alessio Cardelli">scrivimi una email ✉️</a></div>
-   </div>
-   <div class="footer-block">
-     <div class="footer-link"><a class="link" href="privacy.html" target="_blank" title="Pagina informativa privacy di Alessio Cardelli">privacy</a></div>
-     <div class="footer-link"><a class="link" href="links.html" target="_blank" title="Link rapidi di Alessio Cardelli">link rapidi</a></div>
-     <div class="footer-link"><a class="link" href="sitemap.xml" target="_blank" title="Sitemap del website di Alessio Cardelli">sitemap</a></div>
-   </div>
-   <div class="footer-block">
-     <div class="footer-link"><a class="link" href="linkedin.html" target="_blank" title="Profilo LinkedIn di Alessio Cardelli">linkedIn ↗</a></div>
-     <div class="footer-link"><a class="link" href="instagram.html" target="_blank" title="Profilo Instagram di Alessio Cardelli">instagram ↗</a></div>
-     <div class="footer-link"><a class="link" href="tiktok.html" target="_blank" title="Profilo TikTok di Alessio Cardelli">tiktok ↗</a></div>
-   </div>
- </div>
- <div class="footer-copyright">copyright of alessio cardelli | IT12871031006</div>
- </div>
- <!-- - - - - - - - - - - - - - - - - - - - - - FOOTER - - - - - - - - - - - - - - - - - - - - -->
- </div>
- </body>
- </html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script>
+  function toggleDarkMode() {
+      const htmlElement = document.documentElement;
+
+      const hasDarkModeClass = htmlElement.classList.contains("dark-mode");
+
+      if (hasDarkModeClass) {
+          htmlElement.classList.remove("dark-mode");
+      } else {
+          htmlElement.classList.add("dark-mode");
+      }
+  }
+
+  const darkModeToggle = document.getElementById("dark-mode-toggle");
+
+  darkModeToggle.addEventListener("click", toggleDarkMode);
+</script>
+
+<script>
+    var magnets = document.querySelectorAll('.magnetic')
+  var strength = 50
+
+  magnets.forEach( (magnet) => {
+    magnet.addEventListener('mousemove', moveMagnet );
+    magnet.addEventListener('mouseout', function(event) {
+      TweenMax.to( event.currentTarget, 1, {x: 0, y: 0, ease: Power4.easeOut})
+    } );
+  });
+
+  function moveMagnet(event) {
+    var magnetButton = event.currentTarget
+    var bounding = magnetButton.getBoundingClientRect()
+
+    TweenMax.to( magnetButton, 1, {
+      x: ((( event.clientX - bounding.left)/magnetButton.offsetWidth) - 0.5) * strength,
+      y: ((( event.clientY - bounding.top)/magnetButton.offsetHeight) - 0.5) * strength,
+      ease: Power4.easeOut
+    })
+
+  }
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+
+<script>
+  // set the starting position of the cursor outside of the screen
+  let clientX = 100;
+  let clientY = 100;
+  const innerCursor = document.querySelector(".cursor--small");
+
+  const initCursor = () => {
+    // add listener to track the current mouse position
+    document.addEventListener("mousemove", e => {
+      clientX = e.clientX;
+      clientY = e.clientY;
+    });
+
+    // transform the innerCursor to the current mouse position
+    // use requestAnimationFrame() for smooth performance
+    const render = () => {
+      innerCursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
+      // if you are already using TweenMax in your project, you might as well
+      // use TweenMax.set() instead
+      // TweenMax.set(innerCursor, {
+      //   x: clientX,
+      //   y: clientY
+      // });
+
+      requestAnimationFrame(render);
+    };
+    requestAnimationFrame(render);
+  };
+
+  initCursor();
+
+  let lastX = 0;
+  let lastY = 0;
+  let isStuck = false;
+  let showCursor = false;
+  let group, stuckX, stuckY, fillOuterCursor;
+
+  const initCanvas = () => {
+    const canvas = document.querySelector(".cursor--canvas");
+    const shapeBounds = {
+      width: 75,
+      height: 75
+    };
+    paper.setup(canvas);
+    const strokeColor = "#BEBEBE";
+    const strokeWidth = 1;
+    const segments = 8;
+    const radius = 20;
+
+    // we'll need these later for the noisy circle
+    const noiseScale = 150; // speed
+    const noiseRange = 4; // range of distortion
+    let isNoisy = false; // state
+
+    // the base shape for the noisy circle
+    const polygon = new paper.Path.RegularPolygon(
+      new paper.Point(0, 0),
+      segments,
+      radius
+    );
+    polygon.strokeColor = strokeColor;
+    polygon.strokeWidth = strokeWidth;
+    polygon.smooth();
+    group = new paper.Group([polygon]);
+    group.applyMatrix = false;
+
+    const noiseObjects = polygon.segments.map(() => new SimplexNoise());
+    let bigCoordinates = [];
+
+    // function for linear interpolation of values
+    const lerp = (a, b, n) => {
+      return (1 - n) * a + n * b;
+    };
+
+    // function to map a value from one range to another range
+    const map = (value, in_min, in_max, out_min, out_max) => {
+      return (
+        ((value - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min
+      );
+    };
+
+    // the draw loop of Paper.js
+    // (60fps with requestAnimationFrame under the hood)
+    paper.view.onFrame = event => {
+      // using linear interpolation, the circle will move 0.2 (20%)
+      // of the distance between its current position and the mouse
+      // coordinates per Frame
+      lastX = lerp(lastX, clientX, 0.2);
+      lastY = lerp(lastY, clientY, 0.2);
+      group.position = new paper.Point(lastX, lastY);
+    }
+  }
+
+  initCanvas();
+</script>
+
+</body>
+
+</html>
