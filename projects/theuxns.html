@@ -50,9 +50,25 @@
 
 <div class="container">
 
-  <a id="icon-back" class="primary-btn" title="Torna alla homepage del sito" href="../index.html"><img class="arrow-black" title="Icona di freccia verso sinistra" src="../assets/general/arrow-black.svg"></img><img class="arrow-white" title="Icona di freccia verso sinistra" src="../assets/general/arrow-white.svg"></img></a>
+  <a id="icon-back" class="primary-btn tornaIndietro" title="Torna alla homepage del sito"><img class="arrow-black" title="Icona di freccia verso sinistra" src="../assets/general/arrow-black.svg"></img><img class="arrow-white" title="Icona di freccia verso sinistra" src="../assets/general/arrow-white.svg"></img></a>
   <div id="dark-mode-toggle" class="primary-btn" onclick="confetti()"><img class="icon-mode-dark" title="Icona di luna" src="../assets/general/moon.svg"></img><img title="Icona di sole" class="icon-mode-light" src="../assets/general/sun.svg"></img></div>
 
+  <script>
+  const tornaIndietroLinks = document.querySelectorAll('.tornaIndietro');
+
+  tornaIndietroLinks.forEach(function(link) {
+      link.addEventListener('click', function(event) {
+          if (window.history.length > 1) {
+              event.preventDefault(); // Previeni l'azione predefinita del link
+              history.back(); // Torna indietro nella cronologia
+          } else {
+              // Se non c'è una cronologia, reindirizza l'utente a un link specifico
+              window.location.href = 'https://www.alessiocardelli.com';
+          }
+      });
+  });
+  </script>
+  
 <!-- FINO A QUI TENERE SEMPRE TUTTO -->
 
   <h1 class="hide">Alessio Cardelli, user experience designer e design manager</h1>
