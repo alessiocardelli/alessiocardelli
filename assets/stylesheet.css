@@ -368,7 +368,6 @@ h1, .title-big {
     margin-right: 56px;
   }
 
-
   .suble {
     font-size: 64px;
   }
@@ -444,6 +443,14 @@ h1, .title-big {
 
   .footer {
     font-size: 14px;
+  }
+
+  .link:hover {
+    color: #000000;
+  }
+
+  .dark-mode .link:hover {
+    color: #ffffff;
   }
 
 }
