@@ -113,13 +113,21 @@ h1, .title-big {
   padding-top: 36px;
 }
 
+.primary-btn a, .secondary-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.dark-mode .primary-btn a, .dark-mode .secondary-btn a {
+    color: white;
+}
+
 .primary-btn {
   display: inline;
   padding: 16px 40px;
   background: white;
   border: 1px solid #000000;
   border-radius: 100px;
-  color: black;
   font-family: 'Clash', sans-serif !important;
   font-size: 24px;
   font-weight: 800;
@@ -143,6 +151,14 @@ h1, .title-big {
 
 .dark-mode .primary-btn:hover {
   background: white;
+  color: black;
+}
+
+.primary-btn:hover a {
+  color: white;
+}
+
+.dark-mode .primary-btn:hover a {
   color: black;
 }
 
@@ -380,9 +396,6 @@ h1, .title-big {
     margin-right: 56px;
   }
 
-  h1, .title-big {
-    font-size: 72px;
-  }
 
   .suble {
     font-size: 64px;
@@ -413,7 +426,7 @@ h1, .title-big {
   }
 
   h1, .title-big {
-    font-size: 56px;
+    font-size: 72px;
     margin-bottom: 48px;
   }
 
@@ -428,7 +441,7 @@ h1, .title-big {
   }
 
   .secondary-btn {
-    padding: 12px 4px;
+    padding: 12px 24px;
     font-size: 20px;
   }
 
@@ -451,6 +464,19 @@ h1, .title-big {
 
   .footer {
     font-size: 14px;
+  }
+
+}
+
+@media (max-width: 400px) {
+
+  .secondary-btn {
+    padding: 12px 4px;
+  }
+
+  h1, .title-big {
+    font-size: 56px;
+    margin-bottom: 40px;
   }
 
 }
