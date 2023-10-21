@@ -40,39 +40,6 @@ body {
   opacity: 100% !important;
 }
 
-.cursor {
-  position: fixed;
-  left: 0;
-  top: 0;
-  pointer-events: none;
-}
-
-.cursor--small {
-  width: 5px;
-  height: 5px;
-  left: -2.5px;
-  top: -2.5px;
-  border-radius: 50%;
-  z-index: 11000;
-  background: black;
-}
-
-.dark-mode {
-  .cursor--small {
-    background: white;
-  }
-}
-
-.cursor--canvas {
-  width: 100vw;
-  height: 100vh;
-  z-index: 12000;
-}
-
-.page, .page a {
- cursor: none;
-}
-
 .container {
   display: block;
   max-width: 1000px;
@@ -148,10 +115,12 @@ h1, .title-big {
 
 .primary-btn:hover a {
   color: white;
+  font-weight: 800;
 }
 
 .dark-mode .primary-btn:hover a {
   color: black;
+  font-weight: 800;
 }
 
 .secondary-btn {
@@ -184,12 +153,14 @@ h1, .title-big {
 }
 
 .primary-btn a, .secondary-btn a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
 }
 
 .dark-mode .primary-btn a, .dark-mode .secondary-btn a {
-    color: white;
+  color: white;
+  font-weight: 800;
 }
 
 .icon-mode-light {
@@ -391,8 +362,8 @@ h1, .title-big {
   }
 
   .container {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 160px;
+    padding-bottom: 800px;
     margin-left: 56px;
     margin-right: 56px;
   }
