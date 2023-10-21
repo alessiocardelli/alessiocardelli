@@ -363,7 +363,12 @@ h1, .title-big {
     right: 40px;
   }
 
-  #alessio-foto, #icon-back {
+  #alessio-foto {
+    top: 40px;
+    left: 40px;
+  }
+
+#icon-back {
     top: 40px;
     left: 40px;
   }
@@ -392,7 +397,12 @@ h1, .title-big {
     right: 24px;
   }
 
-  #alessio-foto, #icon-back {
+  #alessio-foto {
+    top: 24px;
+    left: 24px;
+  }
+
+  #icon-back {
     top: 24px;
     left: 24px;
   }
