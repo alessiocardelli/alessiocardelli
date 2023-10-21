@@ -113,14 +113,6 @@ h1, .title-big {
   padding-top: 36px;
 }
 
-.primary-btn a, .secondary-btn a {
-    text-decoration: none;
-    color: black;
-}
-
-.dark-mode .primary-btn a, .dark-mode .secondary-btn a {
-    color: white;
-}
 
 .primary-btn {
   display: inline;
@@ -189,6 +181,15 @@ h1, .title-big {
 
 .dark-mode .secondary-btn:hover {
   background: #ffffff17;
+}
+
+.primary-btn a, .secondary-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.dark-mode .primary-btn a, .dark-mode .secondary-btn a {
+    color: white;
 }
 
 .icon-mode-light {
