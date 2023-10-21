@@ -363,6 +363,11 @@ h1, .title-big {
     right: 40px;
   }
 
+  #alessio-foto, #icon-back {
+    top: 40px;
+    left: 40px;
+  }
+
   .container {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -387,6 +392,11 @@ h1, .title-big {
     right: 24px;
   }
 
+  #alessio-foto, #icon-back {
+    top: 24px;
+    left: 24px;
+  }
+
   .container {
     margin-left: 24px;
     margin-right: 24px;
@@ -408,14 +418,15 @@ h1, .title-big {
   }
 
   .secondary-btn {
-    padding: 12px 24px;
+    padding: 12px 4px;
     font-size: 20px;
   }
 
-  .asterisk {
-    font-size: 16px;
-    margin-top: 24px;
-  }
+  .magnetic {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 16px;
+}
 
   .suble {
     font-size: 40px;
