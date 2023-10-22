@@ -75,6 +75,10 @@ h1, .title-big {
   color: #000000a1;
 }
 
+.text-small {
+  font-size: 20px;
+}
+
 .dark-mode .text-big {
   color: white;
 }
@@ -330,10 +334,30 @@ h1, .title-big {
   height: 32px;
 }
 
+.img-desktop {
+  display: block;
+  max-width: 100%;
+}
+
+.img-mobile {
+  display: none;
+  max-width: 100%;
+}
+
+.caption {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
 @media (max-width: 1160px) {
 
   .container {
-    padding-top: 160px;
+    padding-top: 200px;
     padding-bottom: 160px;
     margin-left: 80px;
     margin-right: 80px;
@@ -368,7 +392,7 @@ h1, .title-big {
 
   .container {
     padding-top: 160px;
-    padding-bottom: 800px;
+    padding-bottom: 120px;
     margin-left: 56px;
     margin-right: 56px;
   }
@@ -413,6 +437,10 @@ h1, .title-big {
   .text-big {
     font-size: 20px;
     margin-bottom: 40px;
+  }
+
+  .caption {
+    font-size: 12px;
   }
 
   .primary-btn {
@@ -469,6 +497,16 @@ h1, .title-big {
 
   .title-subpage {
     font-size: 48px;
+  }
+
+  .img-desktop {
+    display: none;
+    max-width: 100%;
+  }
+
+  .img-mobile {
+    display: block;
+    max-width: 100%;
   }
 
 }
