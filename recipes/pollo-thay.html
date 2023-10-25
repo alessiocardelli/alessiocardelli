@@ -52,6 +52,7 @@
 
   <a id="icon-back" class="primary-btn tornaIndietro" title="Torna alla homepage del sito"><img class="arrow-black" title="Icona di freccia verso sinistra" src="../assets/general/arrow-black.svg"></img><img class="arrow-white" title="Icona di freccia verso sinistra" src="../assets/general/arrow-white.svg"></img></a>
   <div id="dark-mode-toggle" class="primary-btn" onclick="confetti()"><img class="icon-mode-dark" title="Icona di luna" src="../assets/general/moon.svg"></img><img title="Icona di sole" class="icon-mode-light" src="../assets/general/sun.svg"></img></div>
+  <a id="condividiBtn" class="primary-btn" title="Condividi questo contenuto"><img class="share-black" title="Icona di condivisione" src="../assets/general/share_dark.svg"></img><img class="share-white" title="Icona di condivisione" src="../assets/general/share_light.svg"></img></a>
 
   <script>
   const tornaIndietroLinks = document.querySelectorAll('.tornaIndietro');
@@ -159,6 +160,34 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+
+<script>
+    // Seleziona il pulsante di condivisione
+    const condividiBtn = document.getElementById('condividiBtn');
+
+    // Aggiungi un gestore di eventi al pulsante
+    condividiBtn.addEventListener('click', () => {
+        // Verifica se il browser supporta il menu di condivisione
+        if (navigator.share) {
+            // Richiama il menu di condivisione
+            navigator.share({
+                title: 'Condividi ricetta',
+                text: 'Ciao, questa ricetta potrebbe piacerti!',
+                url: 'https://www.alessiocardelli.com/recipes/pollo-thay.html'
+            })
+            .then(() => {
+                console.log('Contenuto condiviso con successo.');
+            })
+            .catch((error) => {
+                console.error('Errore durante la condivisione:', error);
+            });
+        } else {
+            // Fallback per i browser che non supportano la condivisione
+            console.log('La condivisione non è supportata su questo browser.');
+            // Puoi fornire un'alternativa qui, come aprire un modulo di condivisione personalizzato.
+        }
+    });
+</script>
 
 </body>
 

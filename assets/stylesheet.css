@@ -329,6 +329,42 @@ h1, .title-big {
   filter: invert(1);
 }
 
+.share-white {
+  display: none;
+}
+
+.share-black {
+  display: block;
+}
+
+.dark-mode .share-black {
+  display: none;
+}
+
+.dark-mode .share-white {
+  display: block;
+}
+
+#condividiBtn {
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+  padding: 16px;
+  cursor: pointer;
+  z-index: 1000;
+  display: none;
+}
+
+#condividiBtn img {
+  height: 24px;
+  width: 24px;
+  color: black;
+}
+
+#condividiBtn:hover img {
+  filter: invert(1);
+}
+
 .spazio {
   display: block;
   height: 32px;
@@ -390,6 +426,12 @@ h1, .title-big {
     left: 40px;
   }
 
+  #condividiBtn {
+    bottom: 40px;
+    right: 40px;
+    display: none;
+  }
+
   .container {
     padding-top: 160px;
     padding-bottom: 120px;
@@ -418,6 +460,12 @@ h1, .title-big {
   #icon-back {
     top: 24px;
     left: 24px;
+  }
+
+  #condividiBtn {
+    bottom: 24px;
+    right: 24px;
+    display: block;
   }
 
   .container {
