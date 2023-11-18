@@ -111,24 +111,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-
-<script>
-  function toggleDarkMode() {
-      const htmlElement = document.documentElement;
-
-      const hasDarkModeClass = htmlElement.classList.contains("dark-mode");
-
-      if (hasDarkModeClass) {
-          htmlElement.classList.remove("dark-mode");
-      } else {
-          htmlElement.classList.add("dark-mode");
-      }
-  }
-
-  const darkModeToggle = document.getElementById("dark-mode-toggle");
-
-  darkModeToggle.addEventListener("click", toggleDarkMode);
-</script>
+<script src="../js/dark-mode.js"></script>
 
 <script>
     var magnets = document.querySelectorAll('.magnetic')
