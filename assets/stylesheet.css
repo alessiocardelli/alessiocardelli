@@ -390,6 +390,10 @@ h1, .title-big {
   margin-top: 20px;
 }
 
+.redirect-center {
+  text-align: center;
+}
+
 @media (max-width: 1160px) {
 
   .container {
