@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html>
+<html lang="it" class="html">
 
 <head>
   <meta charset="utf-8">
-  <meta name="robots" content="noindex">
+  <meta name="robots" content="index, follow">
   <meta name="googlebot" content="index, follow">
   <meta property="og:description" name="description" content="Product Designer & Strategist, UX/UI Mentor, scopri chi è Alessio Cardelli.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:image" content="assets/thumbs/generic.png">
+  <meta property="og:image" content="assets/thumbs/uxhalley.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="627">
 
@@ -18,23 +18,131 @@
   <meta property="og:site_name" content="Alessio Cardelli">
   <meta property="og:url" content="www.alessiocardelli.com">
 
-  <title>Alessio Cardelli, Designer & Strategist, UX/UI Specialst, Speaker, Mentor, Autore.</title>
+  <title>UX Halley, 26 edizioni di una newsletter LinkedIn per designer</title>
+
+  <script type="text/javascript">
+  function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+  }
+  window.addEventListener("scroll", reveal);
+  </script>
 
   <link rel="stylesheet" type="text/css" href="assets/stylesheet.css"/>
   <link rel="icon" href="assets/general/favicon.png" alt="Foto di Alessio Cardelli">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <meta http-equiv="refresh" content="0;url=https://www.linkedin.com/newsletters/6958682327916924928/">
-
 </head>
 
 <body>
 
-  <div class="container">
-    <p class="suble">👋 Ciao! Se il redirect non funziona (ops) <a class="link" href="https://www.linkedin.com/newsletters/6958682327916924928/" title="Link del redirect">clicca qui</a>. Grazie!</p>
-  </div>
+<div class="container">
+
+  <a id="icon-back" class="primary-btn tornaIndietro" title="Torna alla homepage del sito"><img class="arrow-black" title="Icona di freccia verso sinistra" src="assets/general/arrow-black.svg"></img><img class="arrow-white" title="Icona di freccia verso sinistra" src="assets/general/arrow-white.svg"></img></a>
+  <div id="dark-mode-toggle" class="primary-btn" onclick="confetti()"><img class="icon-mode-dark" title="Icona di luna" src="assets/general/moon.svg"></img><img title="Icona di sole" class="icon-mode-light" src="assets/general/sun.svg"></img></div>
+
+  <script>
+  const tornaIndietroLinks = document.querySelectorAll('.tornaIndietro');
+
+  tornaIndietroLinks.forEach(function(link) {
+      link.addEventListener('click', function(event) {
+          if (window.history.length > 1) {
+              event.preventDefault(); // Previeni l'azione predefinita del link
+              history.back(); // Torna indietro nella cronologia
+          } else {
+              // Se non c'è una cronologia, reindirizza l'utente a un link specifico
+              window.location.href = 'https://www.alessiocardelli.com';
+          }
+      });
+  });
+  </script>
+
+<!-- FINO A QUI TENERE SEMPRE TUTTO -->
+
+  <h1 class="hide">UX Halley, newsletter per designer</h1>
+  <p class="title-big title-subpage">uxhalley, news per designer.</p>
+  <p class="text-big">News e link utili sulla UX da 5 minuti di lettura, un edizione ogni due settimane. Progetto iniziato a fine 2022 e terminato dopo 26 edizioni, ad 1 anno dalla sua nascita. Qui la lista di tutte le edizioni riportate da LinkedIn.</p>
+
+  <p class="text-link reveal">
+    <a class="link" target="_blank" title="Link ad una delle edizioni di UX Halley, newsletter per designer" href="ux-halley/edizione26.html">Edizione #26</a><br>
+    <a class="link" target="_blank" title="Link ad una delle edizioni di UX Halley, newsletter per designer" href="ux-halley/edizione25.html">Edizione #25</a><br>
+    <a class="link" target="_blank" title="Link ad una delle edizioni di UX Halley, newsletter per designer" href="ux-halley/edizione24.html">Edizione #24</a><br>
+    <a class="link" target="_blank" title="Link ad una delle edizioni di UX Halley, newsletter per designer" href="ux-halley/edizione23.html">Edizione #23</a><br>
+    <a class="link" target="_blank" title="Link ad una delle edizioni di UX Halley, newsletter per designer" href="ux-halley/edizione22.html">Edizione #22</a><br>
+    <a class="link" target="_blank" title="Link ad una delle edizioni di UX Halley, newsletter per designer" href="ux-halley/edizione21.html">Edizione #21</a><br>
+    <a class="link" target="_blank" title="Link ad una delle edizioni di UX Halley, newsletter per designer" href="ux-halley/edizione20.html">Edizione #20</a><br>
+    <a class="link" target="_blank" title="Link ad una delle edizioni di UX Halley, newsletter per designer" href="ux-halley/edizione19.html">Edizione #19</a><br>
+    <a class="link" target="_blank" title="Link ad una delle edizioni di UX Halley, newsletter per designer" href="ux-halley/edizione18.html">Edizione #18</a><br>
+    <a class="link" target="_blank" title="Link ad una delle edizioni di UX Halley, newsletter per designer" href="ux-halley/edizione17.html">Edizione #17</a><br>
+    <a class="link" target="_blank" title="Link ad una delle edizioni di UX Halley, newsletter per designer" href="ux-halley/edizione16.html">Edizione #16</a><br>
+    <a class="link" target="_blank" title="Link ad una delle edizioni di UX Halley, newsletter per designer" href="ux-halley/edizione15.html">Edizione #15</a><br>
+    <a class="link" target="_blank" title="Link ad una delle edizioni di UX Halley, newsletter per designer" href="ux-halley/edizione14.html">Edizione #14</a><br>
+    <a class="link" target="_blank" title="Link ad una delle edizioni di UX Halley, newsletter per designer" href="ux-halley/edizione13.html">Edizione #13</a><br>
+    <a class="link" target="_blank" title="Link ad una delle edizioni di UX Halley, newsletter per designer" href="ux-halley/edizione12.html">Edizione #12</a><br>
+    <a class="link" target="_blank" title="Link ad una delle edizioni di UX Halley, newsletter per designer" href="ux-halley/edizione11.html">Edizione #11</a><br>
+    <a class="link" target="_blank" title="Link ad una delle edizioni di UX Halley, newsletter per designer" href="ux-halley/edizione10.html">Edizione #10</a><br>
+    <a class="link" target="_blank" title="Link ad una delle edizioni di UX Halley, newsletter per designer" href="ux-halley/edizione09.html">Edizione #09</a><br>
+    <a class="link" target="_blank" title="Link ad una delle edizioni di UX Halley, newsletter per designer" href="ux-halley/edizione08.html">Edizione #08</a><br>
+    <a class="link" target="_blank" title="Link ad una delle edizioni di UX Halley, newsletter per designer" href="ux-halley/edizione07.html">Edizione #07</a><br>
+    <a class="link" target="_blank" title="Link ad una delle edizioni di UX Halley, newsletter per designer" href="ux-halley/edizione06.html">Edizione #06</a><br>
+    <a class="link" target="_blank" title="Link ad una delle edizioni di UX Halley, newsletter per designer" href="ux-halley/edizione05.html">Edizione #05</a><br>
+    <a class="link" target="_blank" title="Link ad una delle edizioni di UX Halley, newsletter per designer" href="ux-halley/edizione04.html">Edizione #04</a><br>
+    <a class="link" target="_blank" title="Link ad una delle edizioni di UX Halley, newsletter per designer" href="ux-halley/edizione03.html">Edizione #03</a><br>
+    <a class="link" target="_blank" title="Link ad una delle edizioni di UX Halley, newsletter per designer" href="ux-halley/edizione02.html">Edizione #02</a><br>
+    <a class="link" target="_blank" title="Link ad una delle edizioni di UX Halley, newsletter per designer" href="ux-halley/edizione01.html">Edizione #01</a><br>
+  </p>
+
+<!-- DA A QUI IN POI TENERE SEMPRE TUTTO -->
+
+  <p class="footer"><a class="link" target="_blank" title="Pagina di informativa privacy" href="https://www.alessiocardelli.com/privacy">privacy</a> — <a class="link" target="_blank" title="Sitemap" href="sitemap.xml">sitemap 🗺️</a><br>© copyright of Alessio Cardelli - IT12871031006</p>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script src="../js/dark-mode.js"></script>
+
+<script>
+    var magnets = document.querySelectorAll('.magnetic')
+  var strength = 50
+
+  magnets.forEach( (magnet) => {
+    magnet.addEventListener('mousemove', moveMagnet );
+    magnet.addEventListener('mouseout', function(event) {
+      TweenMax.to( event.currentTarget, 1, {x: 0, y: 0, ease: Power4.easeOut})
+    } );
+  });
+
+  function moveMagnet(event) {
+    var magnetButton = event.currentTarget
+    var bounding = magnetButton.getBoundingClientRect()
+
+    TweenMax.to( magnetButton, 1, {
+      x: ((( event.clientX - bounding.left)/magnetButton.offsetWidth) - 0.5) * strength,
+      y: ((( event.clientY - bounding.top)/magnetButton.offsetHeight) - 0.5) * strength,
+      ease: Power4.easeOut
+    })
+
+  }
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
 
 </body>
 
