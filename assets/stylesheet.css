@@ -97,7 +97,7 @@ h1, .title-big {
   border-radius: 100px;
   font-family: 'Satoshi', sans-serif !important;
   font-size: 24px;
-  font-weight: 800 !important;
+  font-weight: 400 !important;
   margin: 0;
   text-decoration: none;
   margin-right: 8px;
@@ -123,12 +123,12 @@ h1, .title-big {
 
 .primary-btn:hover a {
   color: white;
-  font-weight: 800 !important;
+  font-weight: 400 !important;
 }
 
 .dark-mode .primary-btn:hover a {
   color: black;
-  font-weight: 800 !important;
+  font-weight: 400 !important;
 }
 
 .secondary-btn {
@@ -140,7 +140,7 @@ h1, .title-big {
   color: black;
   font-family: 'Satoshi', sans-serif !important;
   font-size: 24px;
-  font-weight: 800 !important;
+  font-weight: 400 !important;
   margin: 0;
   text-decoration: none;
   transition: transform 0.2s;
@@ -163,12 +163,12 @@ h1, .title-big {
 .primary-btn a, .secondary-btn a {
   text-decoration: none;
   color: black;
-  font-weight: 800 !important;
+  font-weight: 400 !important;
 }
 
 .dark-mode .primary-btn a, .dark-mode .secondary-btn a {
   color: white;
-  font-weight: 800 !important;
+  font-weight: 400 !important;
 }
 
 .icon-mode-light {
