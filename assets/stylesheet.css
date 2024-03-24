@@ -5,6 +5,11 @@
   src: url('satoshi.otf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Neco';
+  src: url('neco.otf') format('truetype');
+}
+
 body {
   background-color: #FCFDFD;
   color: black;
@@ -392,6 +397,11 @@ h1, .title-big {
 
 .redirect-center {
   text-align: center;
+}
+
+.magic {
+  font-family: 'Neco', sans-serif !important;
+  color: #006EFF !important;
 }
 
 @media (max-width: 1160px) {
