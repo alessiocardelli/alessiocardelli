@@ -16,6 +16,12 @@ body {
   font-family: 'Satoshi', sans-serif;
   scroll-behavior: smooth;
   margin: 0;
+  cursor: url('general/Cursor.png') 17 17, auto;
+}
+
+::selection {
+  color: white;
+  background: #006EFF;
 }
 
 .dark-mode body {
@@ -25,12 +31,12 @@ body {
 
 ::selection {
   color: white;
-  background: black;
+  background: #006EFF;
 }
 
 .dark-mode ::selection {
-  color: black;
-  background: white;
+  color: white;
+  background: #006EFF;
 }
 
 .reveal{
@@ -107,7 +113,7 @@ h1, .title-big {
   text-decoration: none;
   margin-right: 8px;
   transition: transform 0.2s;
-  cursor: pointer;
+  cursor: url('general/Pointer.png') 17 17, auto;
 }
 
 .dark-mode .primary-btn {
@@ -149,7 +155,7 @@ h1, .title-big {
   margin: 0;
   text-decoration: none;
   transition: transform 0.2s;
-  cursor: pointer;
+  cursor: url('general/Pointer.png') 17 17, auto;
 }
 
 .dark-mode .secondary-btn {
@@ -197,7 +203,7 @@ h1, .title-big {
   top: 80px;
   right: 80px;
   padding: 16px;
-  cursor: pointer;
+  cursor: url('general/Pointer.png') 17 17, auto;
 }
 
 #dark-mode-toggle img {
@@ -236,6 +242,7 @@ h1, .title-big {
   font-weight: 400;
   margin: 0;
   margin-bottom: 16px;
+  cursor: url('general/Pointer.png') 17 17, auto;
 }
 
 .link {
@@ -245,11 +252,13 @@ h1, .title-big {
 	padding: 0 .25rem;
 	margin: 0 -.25rem;
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  cursor: url('general/Pointer.png') 17 17, auto;
 }
 
 .dark-mode .link {
   color: #FFFFFF7d;
   box-shadow: inset 0 0 0 0 #FFFFFF;
+  cursor: url('general/Pointer.png') 17 17, auto;
 }
 
 .last {
@@ -264,11 +273,13 @@ h1, .title-big {
 .link:hover {
   color: #fff;
   box-shadow: inset 1000px 0 0 0 #000000;
+  cursor: url('general/Pointer.png') 17 17, auto;
 }
 
 .dark-mode .link:hover {
   color: #000000;
   box-shadow: inset 1000px 0 0 0 #FFFFFF;
+  cursor: url('general/Pointer.png') 17 17, auto;
 }
 
 .footer {
@@ -288,7 +299,7 @@ h1, .title-big {
   top: 80px;
   left: 80px;
   padding: 0px;
-  cursor: pointer;
+  cursor: url('general/Pointer.png') 17 17, auto;
   border: 0px solid !important;
 }
 
@@ -321,7 +332,7 @@ h1, .title-big {
   top: 80px;
   left: 80px;
   padding: 16px;
-  cursor: pointer;
+  cursor: url('general/Pointer.png') 17 17, auto;
 }
 
 #icon-back img {
@@ -355,7 +366,7 @@ h1, .title-big {
   bottom: 80px;
   right: 80px;
   padding: 16px;
-  cursor: pointer;
+  cursor: url('general/Pointer.png') 17 17, auto;
   z-index: 1000;
   display: none;
 }
@@ -530,6 +541,7 @@ h1, .title-big {
   .text-link {
     font-size: 20px;
     margin-bottom: 12px;
+    cursor: url('general/Pointer.png') 17 17, auto;
   }
 
   .footer {
@@ -539,6 +551,7 @@ h1, .title-big {
   .link:hover {
     color: #000000;
     box-shadow: inset 0 0 0 0 #000000;
+    cursor: url('general/Pointer.png') 17 17, auto;
   }
 
 }
