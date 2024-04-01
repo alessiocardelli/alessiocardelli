@@ -415,6 +415,10 @@ h1, .title-big {
   color: #006EFF !important;
 }
 
+.nocursor {
+  cursor: default !important;
+}
+
 @media (max-width: 1160px) {
 
   .container {
