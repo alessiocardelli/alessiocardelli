@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  font-family: 'Neco';
-  src: url('neco.otf') format('truetype');
+  font-family: 'Safiro';
+  src: url('safiro.ttf') format('truetype');
 }
 
 body {
@@ -411,7 +411,7 @@ h1, .title-big {
 }
 
 .magic {
-  font-family: 'Neco', sans-serif !important;
+  font-family: 'Safiro', sans-serif !important;
   color: #006EFF !important;
 }
 
