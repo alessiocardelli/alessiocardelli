@@ -102,7 +102,7 @@ h1, .title-big {
 .primary-btn {
   display: inline;
   padding: 16px 40px;
-  background: white;
+  background: #F9FAFA;
   border: 1px solid #000000;
   border-radius: 100px;
   font-family: 'Satoshi', sans-serif !important;
@@ -131,7 +131,7 @@ h1, .title-big {
 }
 
 .primary-btn:hover a {
-  color: white;
+  color: #F9FAFA;
   font-weight: 400 !important;
 }
 
