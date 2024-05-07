@@ -1,0 +1,188 @@
+<!doctype html>
+
+<html lang="it" class="html">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <meta name="googlebot" content="index, follow">
+  <meta property="og:description" name="description" content="Product Designer & Strategist, UX/UI Mentor, scopri chi è Alessio Cardelli.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:image" content="../assets/thumbs/ricetta.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="627">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alessio Cardelli, Product Designer & Strategist, UX/UI Specialst, Speaker, Mentor, Autore.">
+  <meta property="og:site_name" content="Alessio Cardelli">
+  <meta property="og:url" content="www.alessiocardelli.com">
+
+  <title>Cecitella - Ricetta di Alessio Cardelli, Designer & Strategist, UX/UI Specialst, Speaker, Mentor, Autore.</title>
+
+  <script type="text/javascript">
+  function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+  }
+  window.addEventListener("scroll", reveal);
+  </script>
+
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheet.css"/>
+  <link rel="icon" href="../assets/general/favicon.png" alt="Foto di Alessio Cardelli">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+  <a id="icon-back" class="primary-btn tornaIndietro" title="Torna alla homepage del sito"><img class="arrow-black" title="Icona di freccia verso sinistra" src="../assets/general/arrow-black.svg"></img><img class="arrow-white" title="Icona di freccia verso sinistra" src="../assets/general/arrow-white.svg"></img></a>
+  <div id="dark-mode-toggle" class="primary-btn" onclick="confetti()"><img class="icon-mode-dark" title="Icona di luna" src="../assets/general/moon.svg"></img><img title="Icona di sole" class="icon-mode-light" src="../assets/general/sun.svg"></img></div>
+  <a id="condividiBtn" class="primary-btn" title="Condividi questo contenuto"><img class="share-black" title="Icona di condivisione" src="../assets/general/share_dark.svg"></img><img class="share-white" title="Icona di condivisione" src="../assets/general/share_light.svg"></img></a>
+
+  <script>
+  const tornaIndietroLinks = document.querySelectorAll('.tornaIndietro');
+
+  tornaIndietroLinks.forEach(function(link) {
+      link.addEventListener('click', function(event) {
+          if (window.history.length > 1) {
+              event.preventDefault(); // Previeni l'azione predefinita del link
+              history.back(); // Torna indietro nella cronologia
+          } else {
+              // Se non c'è una cronologia, reindirizza l'utente a un link specifico
+              window.location.href = 'https://www.alessiocardelli.com';
+          }
+      });
+  });
+  </script>
+
+<!-- FINO A QUI TENERE SEMPRE TUTTO -->
+
+  <h1 class="hide">Alessio Cardelli, user experience designer e design manager</h1>
+  <p class="title-big title-subpage">carrot banana bread, <span class="magic">buono e proteico</span>.</p>
+
+  <p class="suble">ingredienti.</p>
+  <p class="text-big">
+    <span class="magic">→</span> 4 banane mature<br>
+    <span class="magic">→</span> 60gr di sciroppo d'agave<br>
+    <span class="magic">→</span> 85gr di olio di cocco sciolto<br>
+    <span class="magic">→</span> 360gr di farina<br>
+    <span class="magic">→</span> 2/3 carote grandi grattuggiate<br>
+    <span class="magic">→</span> 1 bustina di vaniglina<br>
+    <span class="magic">→</span> 1 bustina di lievito<br>
+    <span class="magic">→</span> cannella, pizzico di sale e latte di soia QB
+  </p>
+
+  <p class="suble reveal">procedimento.</p>
+  <p class="text-big reveal">
+    <span class="magic">→</span> grattare le carote e mischiare alle banane pestate creando un composto "papposo"<br><br>
+    <span class="magic">→</span> mischiare tutti gli ingredienti secchi dopo averli setacciati<br><br>
+    <span class="magic">→</span> aggiungere alle carote e le banane l'olio di cocco e lo sciroppo di agave<br><br>
+    <span class="magic">→</span> incorporare man mano gli ingredienti secchi<br><br>
+    <span class="magic">→</span> aggiungere del latte fino a che il composto non diventa morbido e "versabile"<br><br>
+    <span class="magic">→</span> versare in uno stampo da plum cake rivestito e cuocere in forno statico 45/55min a 180gr<br><br>
+    bonus: si può decorare prima di infornare con frutta secca sulla superficie :)
+  </p>
+
+
+<!-- DA A QUI IN POI TENERE SEMPRE TUTTO -->
+
+  <p class="footer"><a class="link" target="_blank" title="Pagina di informativa privacy" href="https://www.alessiocardelli.com/privacy">privacy</a> — <a class="link" target="_blank" title="Sitemap" href="sitemap.xml">sitemap 🗺️</a><br>© copyright of Alessio Cardelli - IT12871031006</p>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script>
+  function toggleDarkMode() {
+      const htmlElement = document.documentElement;
+
+      const hasDarkModeClass = htmlElement.classList.contains("dark-mode");
+
+      if (hasDarkModeClass) {
+          htmlElement.classList.remove("dark-mode");
+      } else {
+          htmlElement.classList.add("dark-mode");
+      }
+  }
+
+  const darkModeToggle = document.getElementById("dark-mode-toggle");
+
+  darkModeToggle.addEventListener("click", toggleDarkMode);
+</script>
+
+<script>
+    var magnets = document.querySelectorAll('.magnetic')
+  var strength = 50
+
+  magnets.forEach( (magnet) => {
+    magnet.addEventListener('mousemove', moveMagnet );
+    magnet.addEventListener('mouseout', function(event) {
+      TweenMax.to( event.currentTarget, 1, {x: 0, y: 0, ease: Power4.easeOut})
+    } );
+  });
+
+  function moveMagnet(event) {
+    var magnetButton = event.currentTarget
+    var bounding = magnetButton.getBoundingClientRect()
+
+    TweenMax.to( magnetButton, 1, {
+      x: ((( event.clientX - bounding.left)/magnetButton.offsetWidth) - 0.5) * strength,
+      y: ((( event.clientY - bounding.top)/magnetButton.offsetHeight) - 0.5) * strength,
+      ease: Power4.easeOut
+    })
+
+  }
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+
+<script>
+    // Seleziona il pulsante di condivisione
+    const condividiBtn = document.getElementById('condividiBtn');
+
+    // Aggiungi un gestore di eventi al pulsante
+    condividiBtn.addEventListener('click', () => {
+        // Verifica se il browser supporta il menu di condivisione
+        if (navigator.share) {
+            // Richiama il menu di condivisione
+            navigator.share({
+                title: 'Condividi ricetta',
+                text: 'Ciao, questa ricetta potrebbe piacerti!',
+                url: 'https://www.alessiocardelli.com/recipes/carrot-bread.html'
+            })
+            .then(() => {
+                console.log('Contenuto condiviso con successo.');
+            })
+            .catch((error) => {
+                console.error('Errore durante la condivisione:', error);
+            });
+        } else {
+            // Fallback per i browser che non supportano la condivisione
+            console.log('La condivisione non è supportata su questo browser.');
+            // Puoi fornire un'alternativa qui, come aprire un modulo di condivisione personalizzato.
+        }
+    });
+</script>
+
+</body>
+
+</html>
