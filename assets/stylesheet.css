@@ -1,13 +1,18 @@
 /* STILI GENERALI E DESKTOP */
 
 @font-face {
-  font-family: 'Satoshi';
-  src: url('satoshi.otf') format('truetype');
+  font-family: 'Gabarito';
+  src: url('Gabarito.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Safiro';
-  src: url('safiro.ttf') format('truetype');
+  font-family: 'Black';
+  src: url('black.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('Satoshi.otf') format('truetype');
 }
 
 body {
@@ -63,7 +68,7 @@ body {
 }
 
 h1, .title-big {
-  font-family: 'Satoshi', sans-serif !important;
+  font-family: 'Gabarito', sans-serif !important;
   font-size: 160px;
   line-height: 100%;
   letter-spacing: -4%;
@@ -105,7 +110,7 @@ h1, .title-big {
   background: #F9FAFA;
   border: 1px solid #000000;
   border-radius: 100px;
-  font-family: 'Satoshi', sans-serif !important;
+  font-family: 'Gabarito', sans-serif !important;
   font-size: 24px;
   font-weight: 400 !important;
   margin: 0;
@@ -147,7 +152,7 @@ h1, .title-big {
   border-radius: 100px;
   border: none;
   color: black;
-  font-family: 'Satoshi', sans-serif !important;
+  font-family: 'Gabarito', sans-serif !important;
   font-size: 24px;
   font-weight: 400 !important;
   margin: 0;
@@ -220,7 +225,7 @@ h1, .title-big {
 }
 
 .suble {
-  font-family: 'Satoshi', sans-serif !important;
+  font-family: 'Gabarito', sans-serif !important;
   font-size: 80px;
   line-height: 100%;
   letter-spacing: -4%;
@@ -401,7 +406,7 @@ h1, .title-big {
 }
 
 .magic {
-  font-family: 'Safiro', sans-serif !important;
+  font-family: 'Black', sans-serif !important;
   color: #006EFF !important;
 }
 
