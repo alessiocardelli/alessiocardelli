@@ -408,6 +408,7 @@ h1, .title-big {
 .magic {
   font-family: 'Black', sans-serif !important;
   color: #006EFF !important;
+  font-size: 120%;
 }
 
 .nocursor {
